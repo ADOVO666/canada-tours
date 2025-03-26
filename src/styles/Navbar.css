@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 40px;
+}
+
+button {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button.active {
+    font-weight: bold;
+}

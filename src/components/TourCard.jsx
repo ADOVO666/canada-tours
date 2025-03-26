@@ -1,17 +1,17 @@
-import { useParams } from 'react-router-dom';
+import React from 'react';
+import '../styles/TourCard.css';
 
-const TourDetail = () => {
-  const { id } = useParams();
-  const tour = {}; // Получите данные тура по id из API или состояния
-
-  return (
-    <div>
-      <h1>{tour.name}</h1>
-      <img src={tour.image} alt={tour.name} />
-      <p>{tour.description}</p>
-      {/* Дополнительная информация о туре */}
-    </div>
-  );
+const TourCard = ({ title, price, image }) => {
+    return (
+        <div className="tour-card">
+            <div className="tour-image">
+                <img src={image} alt={title} />
+            </div>
+            <h3>{title}</h3>
+            <p>{price}</p>
+            <button className="rent-button">Забронировать</button>
+        </div>
+    );
 };
 
-export default TourDetail;
+export default TourCard;

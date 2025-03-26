@@ -1,0 +1,46 @@
+.planning {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+}
+
+.planning h2 {
+    font-size: 2em;
+    color: #2f3a56; /* Темно-синий цвет заголовка */
+}
+
+.planning-steps {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px; /* Добавляем отступы между шагами */
+
+}
+
+.planning-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.planning-image {
+    height: 40px; /* Размер иконок */
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.planning-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2f3a56; /* Цвет заголовка шагов */
+    
+}
+
+.line-image {
+    position: absolute;
+    top: 50%;
+    width: 200px; /* Длина линии между шагами */
+    height: 2px;
+    background-color: #ccc;
+}
+

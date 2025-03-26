@@ -1,0 +1,51 @@
+.header {
+    background-color: #bcf2ff; /* Синий цвет фона */
+    color: rgb(0, 0, 0);
+    padding: 0;
+    display: flex;
+    align-items: center; /* Центрирование контента по вертикали */
+    justify-content: space-between;
+    height: 70vh; /* Высота 100% от окна браузера */
+}
+
+.header-content {
+    padding-left: 40px; /* Отступ слева для заголовка */
+    max-width: 50%; /* Ограничение ширины текста до половины */
+    padding-right: 60px;
+}
+
+.project-name {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.description {
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.voc {
+    max-width: 50%; /* Ограничение изображения по ширине */
+    height: 100%; /* Изображение заполняет всю высоту */
+    object-fit: cover; /* Изображение обрезается, чтобы заполнить правую часть */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.cta-button {
+    background-color: #f9e79f; /* Светло-желтый цвет кнопки */
+    color: black;
+    width: 80%;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px; /* Закругленные края кнопки */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Отступ сверху для кнопки */
+
+}
+
+.cta-button:hover {
+    background-color: #f7dc6f; /* Темнее при наведении */
+}

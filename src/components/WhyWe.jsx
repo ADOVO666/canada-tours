@@ -1,29 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
-//import "./Header.css";
-import logo from "../images/logo.png";
-import whywe from "../images/whywe.png";
+// WhyWe.jsx
+import React from 'react';
+import '../styles/WhyWe.css';
+import whyweImage from "../images/whywe.png";
 
-function WhyWe() {
+const WhyWe = () => {
     return (
-        <header className="header">
-            <div className="header-top">
-                <div className="header-logo">
-                    <span className="project-name">Зачем стоит обратиться к нам?</span>
+        <section className="why-we">
+            <h2>Зачем стоит обратиться к нам?</h2>
+            <div className="why-we-content">
+                <img src={whyweImage} alt="Why Us" className="why-we-image" />
+                <div className="why-we-list">
+                    <p>· Личный гид, говорящий на русском языке!</p>
+                    <p>· Лучшая цена гарантирована!</p>
+                    <p>· Огромный выбор туров и экскурсий</p>
                 </div>
             </div>
-            <div className="header-content">
-                <img src={whywe} alt="vocation" className="whywe" />
-                <p className="description">
-                    <p> Личный гид</p>
-                    <p> Большой вбыор</p>
-                    <p> Лучшая цена</p>
-                </p>
-            </div>
-        </header>
+        </section>
     );
 };
 
 export default WhyWe;
-
-

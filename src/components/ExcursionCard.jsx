@@ -1,13 +1,17 @@
-// ExcursionCard.jsx
-const ExcursionCard = ({ excursion }) => {
+import React from 'react';
+import '../styles/TourCard.css';
+
+const ExcursionCard = ({ title, price, image }) => {
     return (
-      <div className="excursion-card">
-        <img src={excursion.image} alt={excursion.name} />
-        <h3>{excursion.name}</h3>
-        <p>{excursion.description}</p>
-        <button onClick={() => window.location.href = `/excursion/${excursion.id}`}>Подробнее</button>
-      </div>
+        <div className="tour-card">
+            <div className="tour-image">
+                <img src={image} alt={title} />
+            </div>
+            <h3>{title}</h3>
+            <p>{price}</p>
+            <button className="rent-button">Забронировать</button>
+        </div>
     );
-  };
-  
-  export default ExcursionCard;
+};
+
+export default ExcursionCard;

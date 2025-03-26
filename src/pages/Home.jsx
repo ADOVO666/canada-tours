@@ -1,11 +1,16 @@
+import React from 'react';
 import Navbar from '../components/Navbar';
 import TourCard from '../components/TourCard';
 import ExcursionCard from '../components/ExcursionCard';
-import Review from '../components/Review';
+import Popular from '../components/Popular';
+import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 import Landing from '../components/Landing';
 import Planning from '../components/Planning';
 import WhyWe from '../components/WhyWe';
+import Construct from '../components/Construct'; // добавим новый компонент
+
+import '../styles/Home.css'; // создадим общий файл стилей для страницы
 
 const Home = () => {
   const tours = []; // Массив туров
@@ -15,22 +20,31 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <Landing />
-      <Planning />
-      <section id="popular">
-        <h2>Популярные туры</h2>
-        <div className="tours">
-          {tours.map(tour => <TourCard key={tour.id} tour={tour} />)}
-        </div>
-        <h2>Экскурсии</h2>
-        <div className="excursions">
-          {excursions.map(excursion => <ExcursionCard key={excursion.id} excursion={excursion} />)}
-        </div>
+      
+      <section id="landing" className="landing-section">
+        <Landing />
       </section>
-      <WhyWe />
-      <section id="reviews">
-        <h2>Отзывы</h2>
-        <Review reviews={reviews} />
+
+      <section id="construct" className="construct-section">
+        <Construct /> {/* Компонент для выбора даты */}
+      </section>
+
+      <section id="planning" className="planning-section">
+        <Planning />
+      </section>
+
+      <section id="popular" className="popular-section">
+        <Popular />
+      </section>
+
+
+      <section id="WhyWe" className="WhyWe-section">
+        <WhyWe />
+      </section>
+
+
+      <section id="Gallery" className="Gallery-section">
+        <Gallery />
       </section>
       <Footer />
     </div>
