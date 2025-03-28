@@ -1,0 +1,29 @@
+/* TourDetails.css */
+.tour-details-container {
+    padding: 20px;
+}
+
+.tour-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tour-info {
+    margin-top: 20px;
+}
+
+.tour-booking-info {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.booking-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

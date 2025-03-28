@@ -1,3 +1,4 @@
+//Popular.jsx
 import React, { useState } from 'react';
 import '../styles/Popular.css';
 import TourCard from '../components/TourCard';
@@ -66,8 +67,8 @@ const Popular = () => {
                     <TourCard key={tour.id} title={tour.title} price={tour.price} image={tour.image} />
                 ))}
 
-                {activeTab === "Экскурсии" && visibleExcursions.map(excursion => (
-                    <ExcursionCard key={excursion.id} title={excursion.title} price={excursion.price} image={excursion.image} />
+                {activeTab === "Экскурсии" && visibleExcursions.map(tour => (
+                    <TourCard key={tour.id} title={tour.title} price={tour.price} image={tour.image} />
                 ))}
             </div>
 

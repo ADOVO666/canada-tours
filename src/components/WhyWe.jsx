@@ -10,9 +10,9 @@ const WhyWe = () => {
             <div className="why-we-content">
                 <img src={whyweImage} alt="Why Us" className="why-we-image" />
                 <div className="why-we-list">
-                    <p>· Личный гид, говорящий на русском языке!</p>
-                    <p>· Лучшая цена гарантирована!</p>
-                    <p>· Огромный выбор туров и экскурсий</p>
+                    <li>Личный гид, говорящий на русском языке!</li>
+                    <li>Лучшая цена гарантирована!</li>
+                    <li>Огромный выбор туров и экскурсий</li>
                 </div>
             </div>
         </section>

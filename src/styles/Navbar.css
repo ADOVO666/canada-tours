@@ -3,6 +3,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .logo {
@@ -15,7 +16,19 @@ button {
     border: none;
     cursor: pointer;
     font-size: 1em;
+
 }
+
+.navbar-link{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top:8px;
+    font-size: 1em;
+}
+
 
 button.active {
     font-weight: bold;

@@ -1,16 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import TourDetail from './pages/TourDetail';
+import TourDetails from './pages/TourDetails';
 
-const App = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/tour/:id" element={<TourDetail />} />
-      </Routes>
-    </Router>
-  );
-};
+function App() {
+    return (
+        <Router>
+            <Routes>
+                {/* Главная страница */}
+                <Route path="/" element={<Home />} />
+                {/* Страница с деталями тура */}
+                <Route path="/tour/:id" element={<TourDetails />} />
+            </Routes>
+        </Router>
+    );
+}
 
 export default App;

@@ -1,17 +1,17 @@
 .landing-section {
   background-color: rgba(176, 230, 255, 0.979);
-  padding-top: 2px;
+
 
 }
 
 .construct-section {
   background-color: rgba(176, 230, 255, 0.979);
-  padding-top: 2px;
+
   text-align: center;
 }
 
 .popular-section {
-  padding-top: 2px;
+
   background-color: rgba(227, 246, 255, 0.979);
   padding: 40px;
   text-align: center;
@@ -19,10 +19,11 @@
 
 .planning-section {
   background-color: rgba(176, 230, 255, 0.979);
-  padding-top: 2px;
+
 }
 
 .WhyWe-section{
+  margin-top: 200px;
   background-color: rgba(176, 230, 255, 0.979);
 
 }

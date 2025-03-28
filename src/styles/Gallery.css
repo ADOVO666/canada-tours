@@ -24,8 +24,8 @@
 }
 
 .gallery-images img {
-    width: 400px;
-    height: auto;
+    width: 500px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
