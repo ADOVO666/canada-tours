@@ -1,0 +1,8 @@
+\.idea\
+db_settings.py
+SECRET_KEY.py
+*.pyc
+/canada_tours_back/venv
+/canada_tours_back/.idea
+/canada_tours_front/node_modules
+canada_tours_front/src/images/.DS_Store
