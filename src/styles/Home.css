@@ -1,0 +1,53 @@
+ .landing-section {
+   background-color: #8eccff;
+   padding-top: 2px;
+
+
+ }
+
+/*Убирает гор. скролл.*/  
+  body { 
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+
+
+ .construct-section {
+   background-color: #AFDBFF;
+
+   text-align: center;
+ }
+
+ .popular-section {
+
+   background-color: #EFF3FD;
+   padding: 40px;
+   text-align: center;
+ }
+
+ .planning-section {
+   background-color: #AFDBFF;
+    padding-top: 20px;
+ }
+
+ .WhyWe-section {
+   margin-top: 200px;
+   background-color: #AFDBFF;
+   padding-bottom: 100px;
+
+ }
+
+ .gallery-section {
+   margin-top: 200px;
+
+
+
+ }
+
+ .tour-list,
+ .excursion-list {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+ }

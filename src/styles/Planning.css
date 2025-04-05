@@ -1,0 +1,52 @@
+.planning {
+    background-color: #ffff;
+    padding: 60px;
+    text-align: center;
+    height: 350px;
+}
+
+.planning h2 {
+    font-size: 2em;
+    color: #1A202C; 
+}
+
+.planning-steps {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px; 
+
+}
+
+.planning-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+.planning-image {
+    height: 40px; 
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.planning-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1A202C; 
+    
+}
+
+.planning-line {
+    width: 350px; 
+    height: auto;
+    object-fit: cover;
+}
+
+.line-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

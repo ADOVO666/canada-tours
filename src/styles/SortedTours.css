@@ -1,0 +1,29 @@
+.sorted-tours-container {
+
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.sorted-tours-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #003580;
+    text-align: center;
+}
+
+.sorted-tours-container h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #486284;
+    text-align: center;
+}
+
+.no-tours-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff0000;
+}
+.sorted-tours-container img {
+    width: auto;
+    max-width: 100%;
+}
