@@ -93,6 +93,14 @@ class Tour(models.Model):
         verbose_name_plural = 'Туры и Экскурсии'
 
 
+class TourImages(models.Model):
+    tour = models.ForeignKey(Tour, default=None,
+                             on_delete=models.CASCADE,
+                             verbose_name='Дополнительные изображения тура',
+                             related_name='TourImages')
+    images = models.ImageField(upload_to='tours/')
+
+
 class Booking(models.Model):
     """Бронирование Тура или Экскурсии"""
     tourTitle = models.ForeignKey(Tour, on_delete=models.PROTECT,

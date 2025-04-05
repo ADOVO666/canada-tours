@@ -33,7 +33,6 @@ const Popular = () => {
         navigate(`/${type}/${id}`);
     };
 
-    //console.log(visibleTours);
     return (
         <section className="popular-section">
             <h2>Специальное предложение!</h2>

@@ -16,7 +16,7 @@ export const fetchFilteredTours = async (params) => {
 
 // Получение детальной информации о туре
 export const fetchTourDetails = async (id) => {
-    const response = await axios.get(`${API_URL}/tours/${id}/`);
+    const response = await axios.get(`${API_URL}/tours-detail/${id}/`);
     return response.data;
 };
 
