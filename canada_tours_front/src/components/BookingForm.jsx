@@ -59,7 +59,7 @@ const BookingForm = () => {
                     <input 
                         type="text" 
                         name="name" 
-                        placeholder="Ваше имя" 
+                        placeholder="Ваше ФИО" 
                         value={formData.name} 
                         onChange={handleChange} 
                         required 

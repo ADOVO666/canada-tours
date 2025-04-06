@@ -6,9 +6,8 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 class User(models.Model):
     """Пользователь"""
-    name = models.CharField("Имя", max_length=100, unique=False)
-    surname = models.CharField("Фамилия", max_length=100, unique=False)
-    second_name = models.CharField("Отчество", max_length=100, blank=True, unique=False)
+    name = models.CharField("ФИО", max_length=100, unique=False)
+    passport = models.IntegerField(verbose_name="Серия и Номер паспорта", blank=False, null=False, default=1,)
     phone = PhoneNumberField(region='RU', verbose_name="Телефон", blank=False, null=False, )
     email = models.EmailField("Электронная почта", blank=False, null=False, default=None,
                               help_text="Пример: user@example.com")
@@ -67,7 +66,7 @@ class Tour(models.Model):
     # Локация
     destination = models.ForeignKey(Country, on_delete=models.PROTECT,
                                 verbose_name="Страна где проводится тур или экскурсия", related_name='CountryTour')
-    city = models.ForeignKey(CityDeparture, on_delete=models.PROTECT, verbose_name="Город отправления",
+    location = models.ForeignKey(CityDeparture, on_delete=models.PROTECT, verbose_name="Город отправления",
                              related_name='CityDeparture')
     type = models.ForeignKey(Category, on_delete=models.PROTECT, verbose_name="Категория", related_name='Category',
                                  null=True, blank=True)
