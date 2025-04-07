@@ -7,7 +7,8 @@ from phonenumber_field.modelfields import PhoneNumberField
 class User(models.Model):
     """Пользователь"""
     name = models.CharField("ФИО", max_length=100, unique=False)
-    passport = models.IntegerField(verbose_name="Серия и Номер паспорта", blank=False, null=False, default=1,)
+    serial = models.IntegerField(verbose_name="Серия паспорта", blank=False, null=False, default=1234)
+    number = models.IntegerField(verbose_name="Номер паспорта", blank=False, null=False, default=123456)
     phone = PhoneNumberField(region='RU', verbose_name="Телефон", blank=False, null=False, )
     email = models.EmailField("Электронная почта", blank=False, null=False, default=None,
                               help_text="Пример: user@example.com")
