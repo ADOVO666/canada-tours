@@ -1,3 +1,5 @@
+/*popular.css*/
+
 .popular-section {
     text-align: center;
     background-color: #f5f7fb;
@@ -55,8 +57,33 @@ h2 {
     cursor: pointer;
     margin: 20px auto;
     display: block;
+    margin-top: 100px;
 }
 
 .show-more-button:hover {
     background-color: #e6b800;
+}
+
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tours-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .show-more-button {
+        width: 100%;
+    }
+}
+
+/* Для мобильных экранов */
+@media (max-width: 480px) {
+    .tours-grid {
+        grid-template-columns: 1fr;
+    }
 }

@@ -1,4 +1,4 @@
-
+/*construct.css*/
 .construct {
   background-color: #AFDBFF;
 }
@@ -22,8 +22,26 @@
   align-items: center;
   margin-top: 20px;
   width: 100%; 
-  gap: 15px;
+  gap: 30px;
+  flex-wrap: wrap; /* Обеспечим обтекание элементов */
 }
+
+
+.construct-inputs select {
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Устанавливаем 100% ширины */
+
+  height: 45px;
+  font-size: 14px;
+  appearance: none;
+  background-color: #fff;
+  color: #333;
+}
+
+
 
 .section {
   display: flex;
@@ -38,13 +56,19 @@
   padding-bottom: 20px;
 }
 
+.section input[type="number"] {
+  width: 80px;
+}
+
+
 .construct-inputs input {
   padding: 10px;
   margin-left: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 180px;
-  height: 23px; 
+  width: 95%; /* Устанавливаем 100% ширины */
+  gap: 30px;
+  height: 23px;
 }
 
 .search-button {
@@ -58,6 +82,7 @@
   align-self: center; 
   margin-left: auto;
   align-self: flex-end;
+  
 }
 
 .search-button:hover {
@@ -68,4 +93,72 @@
   font-weight: bold;
   margin-bottom: 5px; 
   text-align: center;
+}
+
+
+/* 🔄 Средние экраны от 760 до 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .construct-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* По 2 элемента в строке */
+    grid-template-areas:
+      "searchType searchType"
+      "location departure"
+      "destination arrival"
+      "tickets tickets"
+      "button button";
+    gap: 15px;
+    width: 100%;
+    max-width: 10000px;
+  }
+
+  .section {
+    width: 100%;
+
+
+  }
+
+  .section input[type="number"] {
+    width: 100%;
+  }
+  
+
+  /* Привязка каждой ячейки к своей области */
+  .section:nth-child(1) { grid-area: searchType; }
+  .section:nth-child(2) { grid-area: location; }
+  .section:nth-child(3) { grid-area: departure; }
+  .section:nth-child(4) { grid-area: destination; }
+  .section:nth-child(5) { grid-area: arrival; }
+  .section:nth-child(6) { grid-area: tickets; }
+
+  .search-button {
+    grid-area: button;
+    width: 100%;
+    height: 45px;
+  }
+}
+
+/* 📱 Маленькие экраны до 768px */
+@media (max-width: 768px) {
+  .construct-inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .construct-inputs select,
+  .construct-inputs input {
+    width: 100%;
+    height: 45px;
+    margin-left: 0;
+  }
+
+  .search-button {
+    width: 100%;
+    height: 45px;
+  }
 }

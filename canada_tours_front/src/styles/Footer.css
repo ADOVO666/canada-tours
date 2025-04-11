@@ -1,3 +1,5 @@
+/*footer.css*/
+
 .footer {
     background-color: #4D9EE1;
     padding: 40px;
@@ -67,3 +69,29 @@
     text-decoration: none;
   }
   
+
+  /* Для маленьких экранов */
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-section {
+      margin-bottom: 20px;
+  }
+
+  .map img {
+      width: 100%;
+      max-width: 400px;
+  }
+
+  .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .footer-links a {
+      margin-left: 0;
+  }
+}

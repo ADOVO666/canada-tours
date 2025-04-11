@@ -1,3 +1,4 @@
+/*landing.css*/
 .header {
     background-color: #AFDBFF; 
     color: rgb(0, 0, 0);
@@ -48,4 +49,45 @@
 
 .cta-button:hover {
     background-color: #f8d441; 
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 100%;
+    }
+
+    .voc {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .cta-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Для маленьких экранов */
+@media (max-width: 480px) {
+    .project-name {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
 }

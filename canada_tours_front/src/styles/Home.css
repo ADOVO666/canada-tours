@@ -1,9 +1,18 @@
+ /*home.css*/
  .landing-section {
    background-color: #8eccff;
    padding-top: 2px;
 
 
  }
+
+/*Убирает гор. скролл.*/  
+  body { 
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+
 
  .construct-section {
    background-color: #AFDBFF;
@@ -43,3 +52,41 @@
    grid-template-columns: repeat(3, 1fr);
    gap: 20px;
  }
+
+
+ /* Для маленьких экранов */
+@media (max-width: 768px) {
+  .landing-section {
+      padding-top: 5px;
+  }
+
+  .popular-section, .planning-section, .why-we-section, .gallery-section {
+      padding: 20px;
+  }
+
+  .tour-list,
+  .excursion-list {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+  .landing-section {
+      padding-top: 5px;
+  }
+
+  .tour-list,
+  .excursion-list {
+      grid-template-columns: 1fr;
+  }
+
+  .cta-button {
+      width: 100%;
+  }
+
+  .tabs button {
+      font-size: 1rem;
+      padding: 10px;
+  }
+}

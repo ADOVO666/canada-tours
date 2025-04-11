@@ -1,25 +1,36 @@
+
+//Construct.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { fetchFilteredTours } from '../api';  
 import '../styles/Construct.css';
 
 const Construct = () => {
+  const [searchType, setSearchType] = useState('1');
   const [location, setLocation] = useState('');
   const [departureDate, setDepartureDate] = useState('');
   const [destination, setDestination] = useState('');
   const [arrivalDate, setArrivalDate] = useState('');
   const [tickets, setTickets] = useState(1);  
 
+
   const navigate = useNavigate();
 
   const handleSearch = async () => {
     try {
+      const duration =
+        departureDate && arrivalDate
+          ? Math.ceil(
+              (new Date(arrivalDate) - new Date(departureDate)) /
+              (1000 * 60 * 60 * 24)
+            )
+          : undefined;
       const params = {
         location,
-        departure_date: departureDate,
+        duration,
         destination,
-        arrival_date: arrivalDate,
-        tickets,
+        available_tickets: tickets,
+        type: Number(searchType),
       };
 
       const filteredTours = await fetchFilteredTours(params);  
@@ -44,6 +55,17 @@ const Construct = () => {
       <div className="construct-container">
         <div className="construct-inputs">
           <div className="section">
+            <label>Что ищем?</label>
+            <select
+              value={searchType}
+              onChange={e => setSearchType(e.target.value)}
+            >
+              <option value="1">Туры</option>
+              <option value="2">Экскурсии</option>
+            </select>
+          </div>
+          
+          <div className="section">
             <label>Откуда</label>
             <input
               type="text"
@@ -52,7 +74,7 @@ const Construct = () => {
               onChange={e => setLocation(e.target.value)}
             />
           </div>
-
+          
           <div className="section">
             <label>Дата отправления</label>
             <input
@@ -82,7 +104,7 @@ const Construct = () => {
           </div>
 
           <div className="section">
-            <label>Количество человек</label>
+            <label>Кол-во человек</label>
             <input
               type="number"
               min="1"

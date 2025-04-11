@@ -3,11 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    max-width: 1200px;
+    height: 60vh;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 50px;
-    margin-top: 20px;
   }
   
   .booking-form {
@@ -57,10 +56,10 @@
   }
 
   .booking-info {
-    max-width: 400px;
+    max-width: 1000px;
     text-align: left;
-    margin-top: -200px; 
-    margin-right: 100px;
+    margin-top: -100px;
+    margin-right: 20px;
   }
   
   .booking-info h2 {
@@ -92,5 +91,28 @@
   .contact-info p {
     margin-right: 10px;
     color: #486284;
+  }
+  
+
+  .passport-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .passport-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  .passport-group input:first-child {
+    width: 35%; 
+  }
+  
+  .passport-group input:last-child {
+    width: 65%; 
   }
   

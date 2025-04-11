@@ -1,3 +1,4 @@
+/*planning.css*/
 .planning {
     background-color: #ffff;
     padding: 60px;
@@ -14,6 +15,7 @@
     display: flex;
     justify-content: space-evenly;
     gap: 0px; 
+    flex-wrap: wrap; /* Для адаптации при уменьшении экрана */
 
 }
 
@@ -23,6 +25,7 @@
     align-items: center;
     text-align: center;
     padding-top: 30px;
+    margin-bottom: 20px; /* Добавляем отступ снизу для удобства */
 }
 
 
@@ -49,4 +52,73 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+/* ⚠️ Скрыть линии от 1200 до 1400px */
+@media (min-width: 1000px) and (max-width: 1400px) {
+    .planning-line {
+        display: none;
+    }
+}
+
+/* 📱 Адаптация для ширины < 1000px */
+@media (max-width: 1000px) {
+    .planning {
+        padding: 30px;
+        height: auto;
+    }
+
+    .planning-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planning-step {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .planning-line {
+        display: none;
+    }
+
+    .planning-title {
+        font-size: 1rem;
+    }
+
+    .planning-image {
+        margin-top: 10px;
+    }
+}
+
+
+
+/* Для экранов до 480px */
+@media (max-width: 480px) {
+    .planning {
+        padding: 20px;  /* Меньше отступов для мобильных */
+        height: auto;    /* Убираем фиксированную высоту */
+    }
+
+    .planning-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planning-step {
+        margin-bottom: 15px;  /* Уменьшаем отступы между блоками */
+        flex-basis: 100%;     /* Каждый шаг занимает 100% ширины */
+        text-align: center;   /* Центрируем текст */
+    }
+
+    .planning-line {
+        width: 100%; /* Линия будет растягиваться на всю ширину экрана */
+    }
+
+    .planning-title {
+        font-size: 0.9rem; /* Уменьшаем размер шрифта для маленьких экранов */
+    }
 }

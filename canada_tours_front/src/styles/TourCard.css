@@ -1,13 +1,20 @@
 /* TourCard.css */
 .tour-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 8px;
-
     text-align: center;
     background-color: #fff;
     transition: transform 0.3s ease;
+
+    height: 100%;
+    
 }
+
 
 .tour-card:hover {
     transform: scale(1.05);
@@ -33,7 +40,7 @@
 }
 
 .book-now-button {
-    margin-top: 10px;
+    margin-top: auto;
     padding: 10px 20px;
     background-color: #FFD700;
     border: none;
@@ -41,6 +48,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 
 .book-now-button:hover {
     background-color: #e6b800;
@@ -51,4 +59,30 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Карточки будут занимать доступное пространство */
     gap: 20px;
     margin: 20px 0;
+}
+
+
+/* Для маленьких экранов */
+@media (max-width: 768px) {
+    .tour-card {
+        width: 100%;
+        padding: 10px;
+        
+    }
+
+    .tour-card img {
+        max-height: 180px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    .tour-card {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .tour-card img {
+        max-height: 150px;
+    }
 }

@@ -1,3 +1,4 @@
+//BookingForm.jsx
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Navbar from "../components/Navbar";
@@ -12,8 +13,9 @@ const BookingForm = () => {
         name: '',
         email: '',
         phone: '',
-        passport: '',  
-    });
+        passportSeries: '',
+        passportNumber: '',
+      });
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -27,8 +29,10 @@ const BookingForm = () => {
             tourTitle,
             tickets,
             pricePerTicket,
-            ...formData  
-        };
+            passport: `${formData.passportSeries} ${formData.passportNumber}`,
+            ...formData,
+          };
+          
 
         // Отправляем запрос на бронирование
         try {
@@ -54,12 +58,14 @@ const BookingForm = () => {
     return (
         <div>
             <Navbar />
+
+            
             <div className="booking-form-container">
                 <form className="booking-form" onSubmit={handleSubmit}>
                     <input 
                         type="text" 
                         name="name" 
-                        placeholder="Ваше ФИО" 
+                        placeholder="Ваше имя" 
                         value={formData.name} 
                         onChange={handleChange} 
                         required 
@@ -80,20 +86,33 @@ const BookingForm = () => {
                         onChange={handleChange} 
                         required 
                     />
-                    <input 
-                        type="text" 
-                        name="passport" 
-                        placeholder="Паспортные данные"  
-                        value={formData.passport} 
-                        onChange={handleChange} 
-                        required 
-                    />
+                    <div className="passport-group">
+                        <input
+                            type="text"
+                            name="passportSeries"
+                            placeholder="Серия"
+                            value={formData.passportSeries || ''}
+                            onChange={handleChange}
+                            maxLength="4"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="passportNumber"
+                            placeholder="Номер"
+                            value={formData.passportNumber || ''}
+                            onChange={handleChange}
+                            maxLength="6"
+                            required
+                        />
+                    </div>
 
                     <button type="submit" className="submit-button">Забронировать</button>
                 </form>
 
                 <div className="booking-info">
-                    <h2>Бронирование тура: {tourTitle}</h2>  
+                    <h2>Бронирование тура:</h2>
+                    <h2>{tourTitle}</h2>  
                     <p>Количество билетов: {tickets}</p>  
                     <p>Цена за один билет: {pricePerTicket} руб.</p>  
                     <p>Общая сумма: {tickets * pricePerTicket} руб.</p>  

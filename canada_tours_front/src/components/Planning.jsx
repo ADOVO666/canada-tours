@@ -1,3 +1,4 @@
+//Planning.jsx
 import React from 'react';
 import '../styles/Planning.css';
 import loc from "../images/ChooseLocation.png";
