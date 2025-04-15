@@ -1,12 +1,11 @@
 .why-we {
-    background-color: #ffff;
+    background-color: #fff;
     text-align: center;
     color: #486284;
-    height: 50vh;
-    padding-bottom: 100px;
-    margin-top: 40px;
 
+    margin-top: 40px;
 }
+
 
 .why-we-content {
     display: flex;
@@ -28,4 +27,47 @@
     margin-top: 20px;
     text-align: start;
     color: black;
+}
+
+
+/* ✅ Адаптив до 1200px */
+@media (max-width: 1200px) {
+    .why-we-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .why-we-image {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .why-we-list {
+        text-align: left;
+        padding-left: 10px; /* для чёткой точки */
+
+    }
+
+    .why-we-list li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-we-list {
+        text-align: left;
+        padding-left: 10px; /* для чёткой точки */
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .why-we-list {
+        text-align: left;
+        padding-left: 10px; /* для чёткой точки */
+        font-size: 18px;
+    }
 }

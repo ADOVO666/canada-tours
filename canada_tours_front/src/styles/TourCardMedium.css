@@ -16,7 +16,7 @@
 }
 
 .tour-image-medium {
-    width: 300px; 
+    width: 350px; 
     height: 100%;
     overflow: hidden;
     flex-shrink: 0;
@@ -67,3 +67,65 @@
 .learn-more-button:hover {
     background-color: #e6b800;
 }
+
+@media (max-width: 768px) {
+    .tour-card-medium {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      padding: 0; /* убираем внутренние отступы, чтобы изображение заняло всю ширину */
+      box-sizing: border-box;
+    }
+  
+    .tour-image-medium {
+      width: 100%;
+      height: 250px;
+      border-radius: 0; /* убираем скругление, если нужно ровно по краю */
+      overflow: hidden;
+    }
+  
+    .tour-image-medium img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+      display: block;
+    }
+  
+    .tour-details {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+  
+    .tour-details h3 {
+      font-size: 1.1rem;
+    }
+  
+    .tour-details p {
+      font-size: 0.9rem;
+    }
+  
+    .learn-more-button {
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      margin-bottom: 0;
+    }
+  
+    .sorted-tours-container {
+      padding: 0 10px;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+  
+    .sorted-tours-container h1 {
+      font-size: 2rem;
+    }
+  
+    .sorted-tours-container h2 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  

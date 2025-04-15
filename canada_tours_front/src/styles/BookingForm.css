@@ -24,7 +24,7 @@
   
   .booking-form input,
   .booking-form textarea {
-    width: 100%;
+    width: 94%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -116,3 +116,103 @@
     width: 65%; 
   }
   
+
+  /* ----------- Контрольная точка до 1200px ----------- */
+@media (max-width: 1200px) {
+  .booking-form-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 30px;
+    gap: 40px;
+  }
+
+  .booking-info {
+    margin: 0;
+    text-align: center;
+  }
+
+  .booking-info h2 {
+    font-size: 36px;
+  }
+
+  .booking-info p {
+    font-size: 16px;
+  }
+
+  .booking-form {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* ----------- Контрольная точка до 768px ----------- */
+@media (max-width: 768px) {
+  .booking-form-container {
+    padding: 20px;
+  }
+
+  .booking-info {
+    text-align: center;
+  }
+
+  .booking-info h2 {
+    font-size: 28px;
+  }
+
+  .booking-info p {
+    font-size: 15px;
+  }
+
+  .booking-form {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .booking-form input,
+  .booking-form textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .passport-group input {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .booking-form button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* ----------- Контрольная точка до 480px ----------- */
+@media (max-width: 480px) {
+  .booking-form {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .booking-info h2 {
+    font-size: 24px;
+  }
+
+  .booking-info p {
+    font-size: 14px;
+  }
+
+  .passport-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .passport-group input:first-child,
+  .passport-group input:last-child {
+    width: 92%;
+  }
+
+  .booking-form button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}

@@ -1,97 +1,151 @@
-/*footer.css*/
-
 .footer {
-    background-color: #4D9EE1;
-    padding: 40px;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+  background-color: #4D9EE1;
+  padding: 40px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo-section {
+  max-width: 200px;
+}
+
+.logo-section h3 {
+  font-size: 1.5rem;
+}
+
+.Logo {
+  height: 100px;
+  margin-left: 20px;
+}
+
+.community,
+.about {
+  text-align: left;
+}
+
+/* Кастомные стили для совместного выравнивания community и about */
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Карта */
+.map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.map img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* 💻 Адаптив 768px - 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
-  
+  .footer-bigrow{
+    flex-direction: row;
+  }
+  .footer-row {
+    justify-content: center;
+    flex-direction: row;
+    gap: 60px;
+  }
+
   .footer-section {
-    margin-bottom: 20px;
-    flex: 1;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
   }
 
-  .logo-section {
-    max-width: 200px;
-  }
-  
-  .logo-section h3 {
-    font-size: 1.5rem;
+  .map img {
+    max-width: 80%;
   }
 
-  .Logo{
-    height: 100px;
-    margin-left: 20px
+  .footer-links a {
+    margin-left: 10px;
   }
-  
-  .social-media-icons i {
-    font-size: 1.2rem;
-    margin-right: 10px;
-  }
-  
-  .community, .about {
-    margin-left:40px;
-    text-align: left;
-  }
-  
-  ul {
-    list-style: none;
+  .community,
+  .about {
+    display: none;
+    font-size: 0;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
     padding: 0;
   }
-  
-  ul li {
-    margin: 5px 0;
-  }
-  
-  .map img {
-    width: 500px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .footer-bottom {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-  }
-  
-  .footer-links a {
-    color: #fff;
-    margin-left: 20px;
-    text-decoration: none;
-  }
-  
+}
 
-  /* Для маленьких экранов */
+/* 📱 Адаптив до 768px */
 @media (max-width: 768px) {
   .footer {
-      flex-direction: column;
-      text-align: center;
+
+    text-align: center;
+    align-items: center;
   }
 
-  .footer-section {
-      margin-bottom: 20px;
+  .Logo {
+    margin-left: 0;
+  }
+
+  .logo-section p {
+    text-align: center;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .community,
+  .about {
+    display: none;
+    font-size: 0;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .map img {
-      width: 100%;
-      max-width: 400px;
-  }
-
-  .footer-bottom {
-      text-align: center;
-      margin-top: 20px;
+    width: 90%;
+    max-width: 400px;
   }
 
   .footer-links a {
-      margin-left: 0;
+    margin: 0 10px;
   }
 }

@@ -64,18 +64,34 @@
 }
 
 
-@media (max-width: 768px) {
+/* 📏 Контрольная точка до 1200px */
+@media (max-width: 1200px) {
     .gallery-images img {
-        width: 100%;
-        max-height: 200px;
+        width: 350px;
+        height: 250px;
     }
 }
 
-/* Для маленьких экранов */
+@media (max-width: 768px) {
+    .gallery-images {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gallery-images img {
+        width: 100%;
+        max-height: 200px;
+        border-radius: 20px; /* 📱 скругление для мобильных */
+    }
+    
+}
+
+/* 📱 Очень маленькие экраны */
 @media (max-width: 480px) {
     .gallery-images img {
         width: 100%;
         max-height: 150px;
+        
     }
 
     .gallery h2 {

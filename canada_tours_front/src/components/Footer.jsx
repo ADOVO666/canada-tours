@@ -12,23 +12,29 @@ const Footer = () => {
         <img src={logo} alt="Logo" className="Logo" />
         <p>Наша компания сделает ваш отдых незабываемым</p>
       </div>
-      <div className="footer-section community">
-        <h4>Сообщество</h4>
-        <ul>
-          <li>События</li>
-          <li>Канал в тт</li>
-          <li>Рассказать друзьям</li>
-        </ul>
+
+
+      <div className="footer-row">
+        <div className="footer-section community">
+          <h4>Сообщество</h4>
+          <ul>
+            <li>События</li>
+            <li>Канал в тт</li>
+            <li>Рассказать друзьям</li>
+          </ul>
+        </div>
+        <div className="footer-section about">
+          <h4>О нас</h4>
+          <ul>
+            <li>Наши сотрудники</li>
+          </ul>
+        </div>
       </div>
-      <div className="footer-section about">
-        <h4>О нас</h4>
-        <ul>
-          <li>Наши сотрудники</li>
-        </ul>
-      </div>
+      
       <div className="footer-section map">
         <img src={OurLocation} alt="Our Location" />
       </div>
+
       <div className="footer-bottom">
         <p>©2025 Canada-tours</p>
         <div className="footer-links">

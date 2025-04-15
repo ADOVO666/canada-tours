@@ -1,9 +1,13 @@
 /* Payment.css */
+
+
+
 .payment-container {
     display: flex;
     justify-content: space-between;
     height: 100vh;
     padding: 50px;
+    overflow-x: hidden;
 }
 
 .form-container {

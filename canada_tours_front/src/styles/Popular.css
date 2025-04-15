@@ -64,6 +64,14 @@ h2 {
     background-color: #e6b800;
 }
 
+/* 📐 От 768 до 1200px — 2 карточки в ряд */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .tours-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+  
 
 @media (max-width: 768px) {
     .tabs {

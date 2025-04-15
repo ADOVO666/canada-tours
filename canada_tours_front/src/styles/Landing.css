@@ -52,42 +52,75 @@
 }
 
 
-@media (max-width: 768px) {
+/* 1. От 768px до 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
     .header {
-        flex-direction: column;
-        height: auto;
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      padding: 30px 20px;
     }
-
+  
     .header-content {
-        padding-left: 20px;
-        padding-right: 20px;
-        max-width: 100%;
+      max-width: 100%;
+      padding: 0;
     }
-
-    .voc {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin-top: 20px;
-    }
-
-    .cta-button {
-        width: 100%;
-        margin-top: 10px;
-    }
-}
-
-/* Для маленьких экранов */
-@media (max-width: 480px) {
+  
     .project-name {
-        font-size: 2.5rem;
+      font-size: 2.8rem;
     }
-
+  
     .description {
-        font-size: 0.9rem;
+      font-size: 1rem;
+      text-align: justify;
     }
-
+  
+    .voc {
+      max-width: 100%;
+      height: auto;
+      border-radius: 30px;
+      margin-top: 20px;
+    }
+  
     .cta-button {
-        font-size: 1rem;
+      width: 60%;
+      font-size: 1.1rem;
     }
-}
+  }
+  
+  /* 2. До 768px */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      text-align: justify;
+    }
+  
+    .header-content {
+      max-width: 100%;
+      padding: 0;
+    }
+  
+    .project-name {
+      font-size: 2.2rem;
+    }
+  
+    .description {
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+  
+    .voc {
+      width: 1%;
+
+      visibility: hidden;
+    }
+  
+    .cta-button {
+      width: 100%;
+      font-size: 1rem;
+      padding: 12px 20px;
+      margin-top: 15px;
+    }
+  }

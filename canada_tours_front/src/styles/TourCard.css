@@ -67,7 +67,9 @@
     .tour-card {
         width: 100%;
         padding: 10px;
-        
+    }
+    .tour-card h3{
+        font-size: 20px;
     }
 
     .tour-card img {
@@ -80,6 +82,10 @@
     .tour-card {
         width: 100%;
         padding: 8px;
+    }
+
+    .tour-card h3{
+        font-size: 20px;
     }
 
     .tour-card img {
