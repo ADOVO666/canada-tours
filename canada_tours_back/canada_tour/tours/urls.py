@@ -1,6 +1,7 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import UserViewSet, TourViewSet, BookingViewSet, TourDetailViewSet
+
+from .views import UserViewSet, TourViewSet, BookingViewSet, TourDetailViewSet, CityDepartureViewSet, CountryViewSet
 
 router = DefaultRouter()
 # Регистрируем пути взаимодействия
@@ -12,6 +13,10 @@ router.register(r'tours', TourViewSet)
 router.register(r'bookings', BookingViewSet)
 # Детали туров
 router.register(r'tours-detail', TourDetailViewSet, basename='tours_detail')
+# Существующие города
+router.register(r'cities', CityDepartureViewSet, basename='cities')
+# Существующие страны
+router.register(r'countries', CountryViewSet, basename='countries')
 
 urlpatterns = [
     path('api/', include(router.urls)),

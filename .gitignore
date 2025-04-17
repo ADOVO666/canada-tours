@@ -7,3 +7,4 @@ SECRET_KEY.py
 /canada_tours_front/node_modules
 canada_tours_front/src/images/.DS_Store
 /canada_tours_front/.idea
+canada_tours_back/canada_tour/db_settings.py

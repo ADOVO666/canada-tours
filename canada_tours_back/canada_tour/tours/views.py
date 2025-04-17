@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from django.contrib.postgres.aggregates import ArrayAgg
-from .models import User, Tour, Booking
-from .serializers import UserSerializer, TourSerializer, BookingSerializer, TourDetailSerializer
+from .models import User, Tour, Booking, CityDeparture, Country
+from .serializers import UserSerializer, TourSerializer, BookingSerializer, TourDetailSerializer, \
+    CityDepartureSerializer, CountrySerializer
+
 
 # Create your views here.
 class UserViewSet(viewsets.ModelViewSet):
@@ -30,3 +32,13 @@ class TourDetailViewSet(viewsets.ModelViewSet):
 class BookingViewSet(viewsets.ModelViewSet):
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
+
+
+class CityDepartureViewSet(viewsets.ModelViewSet):
+    queryset = CityDeparture.objects.all()
+    serializer_class = CityDepartureSerializer
+
+
+class CountryViewSet(viewsets.ModelViewSet):
+    queryset = Country.objects.all()
+    serializer_class = CountrySerializer

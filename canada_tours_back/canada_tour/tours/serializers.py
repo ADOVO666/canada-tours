@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.contrib.postgres.aggregates import ArrayAgg
-from .models import User, Tour, Booking
+from .models import User, Tour, Booking, CityDeparture, Country
+
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -33,3 +34,15 @@ class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
         fields = '__all__'
+
+
+class CityDepartureSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CityDeparture
+        fields = ('name',)
+
+
+class CountrySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Country
+        fields = ('name',)
