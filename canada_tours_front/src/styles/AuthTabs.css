@@ -1,0 +1,39 @@
+.auth-tabs {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+  }
+  
+  .tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  
+  .tab-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+  }
+  
+  .tab-buttons .active {
+    background-color: #FFD700;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .auth-form button {
+    background: #FFD700;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -8,6 +8,8 @@ import '../styles/BookingForm.css';
 const BookingForm = () => {
     const location = useLocation();
     const navigate = useNavigate();
+    const userId = localStorage.getItem('userId');
+
     const { tourTitle, tickets, pricePerTicket } = location.state || {}; 
     const [formData, setFormData] = useState({
         name: '',
@@ -26,12 +28,11 @@ const BookingForm = () => {
 
 
         const bookingData = {
-            tourTitle,
-            tickets,
-            pricePerTicket,
-            passport: `${formData.passportSeries} ${formData.passportNumber}`,
-            ...formData,
-          };
+            tourTitle: tourTitle,         // ID тура
+            formData: parseInt(userId),   // ID пользователя
+            amount_tickets: tickets       // количество мест
+        };
+
           
 
         // Отправляем запрос на бронирование

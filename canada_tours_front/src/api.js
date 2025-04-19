@@ -31,3 +31,23 @@ export const payForTour = async (paymentData) => {
     const response = await axios.post(`${API_URL}/payments/`, paymentData);
     return response.data;
 };
+
+export const registerUser = async (userData) => {
+    const response = await axios.post(`${API_URL}/users/`, userData);
+    return response.data;
+};
+
+export const loginUser = async (loginData) => {
+    const response = await axios.get(`${API_URL}/users/`, {
+        params: {
+            email: loginData.email,
+            phone: loginData.phone,
+        },
+    });
+
+    if (response.data.length > 0) {
+        return response.data[0]; // предполагается, что email и phone уникальны
+    } else {
+        throw new Error('Пользователь не найден');
+    }
+};
