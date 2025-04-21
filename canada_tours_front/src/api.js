@@ -10,7 +10,7 @@ export const fetchTours = async () => {
 
 // Фильтрация туров и экскурсий по параметрам из консруктора
 export const fetchFilteredTours = async (params) => {
-    const response = await axios.get(`${API_URL}/tours/`, { params });
+    const response = await axios.get(`${API_URL}/filtered-tours/`, { params });
     return response.data;
 };
 

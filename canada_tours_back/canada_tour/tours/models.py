@@ -67,7 +67,7 @@ class Tour(models.Model):
     # Локация
     destination = models.ForeignKey(Country, on_delete=models.PROTECT,
                                 verbose_name="Страна где проводится тур или экскурсия", related_name='CountryTour')
-    city = models.ForeignKey(CityDeparture, on_delete=models.PROTECT, verbose_name="Город отправления",
+    location = models.ForeignKey(CityDeparture, on_delete=models.PROTECT, verbose_name="Город отправления",
                              related_name='CityDeparture')
     type = models.ForeignKey(Category, on_delete=models.PROTECT, verbose_name="Категория", related_name='Category',
                                  null=True, blank=True)
