@@ -8,7 +8,7 @@ import { fetchTours } from '../api';
 const SortedTours = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    const { destination } = location.state || {};
+    const { filteredTours = [], destination } = location.state || {};
 
     const [tours, setTours] = useState([]);
     const [excursions, setExcursions] = useState([]);
@@ -19,9 +19,9 @@ const SortedTours = () => {
         const loadTours = async () => {
             try {
                 setLoading(true);
-                const allTours = await fetchTours(destination); 
-                setTours(allTours.filter(tour => tour.type === 1));
-                setExcursions(allTours.filter(excursion => excursion.type === 2));
+                //const allTours = await fetchTours(destination);
+                setTours(filteredTours.filter(tour => tour.type === 1));
+                setExcursions(filteredTours.filter(excursion => excursion.type === 2));
             } catch (err) {
                 setError("Ошибка загрузки данных");
             } finally {
@@ -29,7 +29,7 @@ const SortedTours = () => {
             }
         };
         loadTours();
-    }, [destination]);
+    }, [filteredTours]);
 
     const handleLearnMore = (id) => {
         navigate(`/tour/${id}`);
