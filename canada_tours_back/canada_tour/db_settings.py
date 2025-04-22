@@ -5,7 +5,7 @@ DATABASES = {
          'USER': 'postgres',
          'PASSWORD': '123234',
          'HOST': 'localhost',
-         'PORT': 5432,
+         'PORT': 5433,
          'OPTIONS': {
             'client_encoding': 'UTF8',
         },

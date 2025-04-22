@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'corsheaders',
     'tours',
-    'rest_framework_simplejwt',
 ]
 
 MIDDLEWARE = [
@@ -105,23 +104,6 @@ WSGI_APPLICATION = 'canada_tour.wsgi.application'
 import db_settings
 DATABASES = db_settings.DATABASES
 
-
-
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    )
-}
-
-
-AUTH_USER_MODEL = 'tours.User'
-
-
-from datetime import timedelta
-SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
