@@ -12,7 +12,7 @@ const Register = () => {
         e.preventDefault();
         
         // Получаем сохранённые данные из localStorage
-        const savedUser = localStorage.getItem('user');
+        const savedUser = localStorage.getItem('user'+name);
         
         if (savedUser) {
             const userData = JSON.parse(savedUser);
