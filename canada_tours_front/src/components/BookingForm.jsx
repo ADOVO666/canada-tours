@@ -2,49 +2,50 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Navbar from "../components/Navbar";
-import { bookTour } from '../api';  
+import { AddUser, bookTour } from '../api';  
 import '../styles/BookingForm.css';
 
 const BookingForm = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    const { tourTitle, tickets, pricePerTicket } = location.state || {}; 
-    const [formData, setFormData] = useState({
+    const { tourTitle, tourName, amount_tickets, pricePerTicket } = location.state || {}; 
+    const [userData, setUserData] = useState({
         name: '',
         email: '',
         phone: '',
-        passportSeries: '',
-        passportNumber: '',
-      });
+        serial: '',
+        number: '',
+    });
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        setUserData({ ...userData, [e.target.name]: e.target.value });
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-
-        const bookingData = {
-            tourTitle,
-            tickets,
-            pricePerTicket,
-            passport: `${formData.passportSeries} ${formData.passportNumber}`,
-            ...formData,
-          };
-          
-
         // Отправляем запрос на бронирование
         try {
+            //Сначала добавляем юзера
+            const userAddResponse = await AddUser(userData);
+            //Далее с помощью полученого id юзера конструируем данные для бронирования
+            const formData = userAddResponse.id;
+            const bookingData = {
+                amount_tickets,
+                tourTitle,
+                formData,
+            };
+
             const bookingResponse = await bookTour(bookingData); 
             if (bookingResponse) {
                 // Переход к оплате с данными о бронировании
                 navigate('/payment', {
                     state: {
                         tourTitle,
-                        tickets,
+                        tourName,
+                        amount_tickets,
                         pricePerTicket,
-                        formData,  
+                        userData,  
                     }
                 });
             } else {
@@ -66,7 +67,7 @@ const BookingForm = () => {
                         type="text" 
                         name="name" 
                         placeholder="Ваше имя" 
-                        value={formData.name} 
+                        value={userData.name} 
                         onChange={handleChange} 
                         required 
                     />
@@ -74,7 +75,7 @@ const BookingForm = () => {
                         type="email" 
                         name="email" 
                         placeholder="Ваш email" 
-                        value={formData.email} 
+                        value={userData.email} 
                         onChange={handleChange} 
                         required 
                     />
@@ -82,25 +83,25 @@ const BookingForm = () => {
                         type="tel" 
                         name="phone" 
                         placeholder="Ваш телефон" 
-                        value={formData.phone} 
+                        value={userData.phone} 
                         onChange={handleChange} 
                         required 
                     />
                     <div className="passport-group">
                         <input
                             type="text"
-                            name="passportSeries"
+                            name="serial"
                             placeholder="Серия"
-                            value={formData.passportSeries || ''}
+                            value={userData.serial || ''}
                             onChange={handleChange}
                             maxLength="4"
                             required
                         />
                         <input
                             type="text"
-                            name="passportNumber"
+                            name="number"
                             placeholder="Номер"
-                            value={formData.passportNumber || ''}
+                            value={userData.number || ''}
                             onChange={handleChange}
                             maxLength="6"
                             required
@@ -112,10 +113,10 @@ const BookingForm = () => {
 
                 <div className="booking-info">
                     <h2>Бронирование тура:</h2>
-                    <h2>{tourTitle}</h2>  
-                    <p>Количество билетов: {tickets}</p>  
+                    <h2>{tourName}</h2>  
+                    <p>Количество билетов: {amount_tickets}</p>  
                     <p>Цена за один билет: {pricePerTicket} руб.</p>  
-                    <p>Общая сумма: {tickets * pricePerTicket} руб.</p>  
+                    <p>Общая сумма: {amount_tickets * pricePerTicket} руб.</p>  
                 </div>
             </div>
         </div>
