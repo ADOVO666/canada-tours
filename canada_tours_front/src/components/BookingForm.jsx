@@ -95,6 +95,7 @@ const BookingForm = () => {
                             value={userData.serial || ''}
                             onChange={handleChange}
                             maxLength="4"
+                            minLength="4"
                             required
                         />
                         <input
@@ -104,6 +105,7 @@ const BookingForm = () => {
                             value={userData.number || ''}
                             onChange={handleChange}
                             maxLength="6"
+                            minLength="6"//Меточка
                             required
                         />
                     </div>

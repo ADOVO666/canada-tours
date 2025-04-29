@@ -37,3 +37,15 @@ export const payForTour = async (paymentData) => {
     const response = await axios.post(`${API_URL}/payments/`, paymentData);
     return response.data;
 };
+
+// Получение списка городов
+export const fetchCities = async () => {
+    const response = await axios.get(`${API_URL}/cities/`);
+    return response.data;
+};
+
+// Получение списка стран
+export const fetchCountries = async () => {
+    const response = await axios.get(`${API_URL}/countries/`);
+    return response.data;
+};

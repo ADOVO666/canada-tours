@@ -3,26 +3,41 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import '../styles/AuthForm.css';
 
-const Register = () => {
+const Login = () => {
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const userData = { name, password };
-        localStorage.setItem('user'+name, JSON.stringify(userData));
-        navigate('/');
-        setName('');
-        setPassword('');
-    }
+<<<<<<< HEAD
+        
+        // Получаем сохранённые данные из localStorage
+=======
+>>>>>>> 151d2c6c4cd8dc8863a4f4532df93cf198662745
+        const savedUser = localStorage.getItem('user'+name);
+        
+        if (savedUser) {
+            const userData = JSON.parse(savedUser);
+            if (userData.name === name && userData.password === password) {
+                sessionStorage.setItem('authenticated', 'true');
+                navigate('/');
+            } else {
+                setError('Неверное имя или пароль');
+            }
+        } else {
+            setError('Пользователь не найден. Зарегистрируйтесь.');
+        }
+    };
 
     return (
         <div>
             <Navbar />
             <div className="auth-container">
                 <form className="auth-form" onSubmit={handleSubmit}>
-                    <h2>Регистрация</h2>
+                    <h2>Вход</h2>
+                    {error && <div className="error-message">{error}</div>}
                     <label>
                         Имя:
                         <input
@@ -41,11 +56,11 @@ const Register = () => {
                             required
                         />
                     </label>
-                    <button type="submit">Зарегистрироваться</button>
+                    <button type="submit">Войти</button>
                 </form>
             </div>
         </div>
     );
-}
+};
 
-export default Register;
+export default Login;
