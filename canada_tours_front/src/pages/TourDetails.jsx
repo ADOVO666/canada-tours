@@ -11,18 +11,19 @@ const TourDetails = () => {
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0); 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [quantity, setQuantity] = useState(1);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const loadTourDetails = async () => {
       try {
         setLoading(true);
-        const isTour = location.pathname.includes("/tour/");
-        const type = isTour ? 1 : 2;
-
         const tourData = await fetchTourDetails(id);
+        console.log('Received tour data:', tourData);
         setItem(tourData);
       } catch (err) {
+        console.error('Error loading tour:', err);
         setError("Ошибка загрузки данных");
       } finally {
         setLoading(false);
@@ -30,7 +31,7 @@ const TourDetails = () => {
     };
 
     loadTourDetails();
-  }, [id, location.pathname]);
+  }, [id]);
 
   if (loading) {
     return (
@@ -50,28 +51,49 @@ const TourDetails = () => {
     );
   }
 
+  const maxTickets = item.max_tickets - item.current_tickets;
+
   const nextImage = () => {
     if (item.images && currentImageIndex < item.images.length - 1) {
       setCurrentImageIndex(currentImageIndex + 1);
+      setImageLoaded(false);
     }
   };
 
   const prevImage = () => {
     if (item.images && currentImageIndex > 0) {
       setCurrentImageIndex(currentImageIndex - 1);
+      setImageLoaded(false);
+    }
+  };
+
+  const handleQuantityChange = (e) => {
+    const value = e.target.value;
+    if (value === '') {
+      setQuantity('');
+    } else {
+      const numValue = parseInt(value);
+      if (!isNaN(numValue) && numValue > 0 && numValue <= maxTickets) {
+        setQuantity(numValue);
+      }
     }
   };
 
   const handleBooking = () => {
+    if (!quantity || quantity < 1) {
+      return;
+    }
     navigate("/booking", {
       state: {
         tourTitle: item.id,
         tourName: item.title,
-        amount_tickets: item.max_tickets - item.current_tickets,
+        amount_tickets: quantity,
         pricePerTicket: item.price
       }
     });
   };
+
+  const currentImage = item.images ? item.images[currentImageIndex] : item.image;
 
   return (
     <div>
@@ -84,11 +106,19 @@ const TourDetails = () => {
             {item.images && item.images.length > 1 && (
               <button className="prev-button" onClick={prevImage}>&lt;</button>
             )}
-            <img
-              src={item.images ? item.images[currentImageIndex] : item.image}
-              alt={item.title}
-              className="tour-details-image"
-            />
+            {currentImage && (
+              <img
+                src={currentImage}
+                alt={item.title}
+                className="tour-details-image"
+                onLoad={() => setImageLoaded(true)}
+                onError={(e) => {
+                  console.error('Error loading image:', e.target.src);
+                  e.target.style.display = 'none';
+                }}
+                style={{ display: imageLoaded ? 'block' : 'none' }}
+              />
+            )}
             {item.images && item.images.length > 1 && (
               <button className="next-button" onClick={nextImage}>&gt;</button>
             )}
@@ -96,8 +126,30 @@ const TourDetails = () => {
           
           <p>{item.description}</p>
           <p><strong>Цена:</strong> {item.price} руб.</p>
-          <p><strong>Доступно мест:</strong> {item.max_tickets - item.current_tickets}</p>
-          <button className="book-now-button" onClick={handleBooking}>
+          <p><strong>Доступно мест:</strong> {maxTickets}</p>
+          
+          <div className="quantity-selector">
+            <label htmlFor="ticket-quantity">Количество билетов:</label>
+            <input
+              type="number"
+              id="ticket-quantity"
+              min="1"
+              max={maxTickets}
+              value={quantity}
+              onChange={handleQuantityChange}
+              onKeyDown={(e) => {
+                if (e.key === 'e' || e.key === 'E' || e.key === '-' || e.key === '+') {
+                  e.preventDefault();
+                }
+              }}
+            />
+          </div>
+
+          <button 
+            className="book-now-button" 
+            onClick={handleBooking}
+            disabled={!quantity || quantity < 1}
+          >
             Забронировать
           </button>
         </div>

@@ -17,17 +17,46 @@ const BookingForm = () => {
         number: '',
     });
 
+    const normalizePhoneNumber = (phone) => {
+        // Remove all non-digit characters
+        let normalized = phone.replace(/\D/g, '');
+        
+        // If number starts with 8, replace with 7
+        if (normalized.startsWith('8')) {
+            normalized = '7' + normalized.slice(1);
+        }
+        
+        // If number doesn't start with 7, add it
+        if (!normalized.startsWith('7')) {
+            normalized = '7' + normalized;
+        }
+        
+        // Add + prefix
+        return '+' + normalized;
+    };
+
     const handleChange = (e) => {
-        setUserData({ ...userData, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+        if (name === 'phone') {
+            setUserData({ ...userData, [name]: value });
+        } else {
+            setUserData({ ...userData, [name]: value });
+        }
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        // Normalize phone number before submission
+        const normalizedUserData = {
+            ...userData,
+            phone: normalizePhoneNumber(userData.phone)
+        };
+
         // Отправляем запрос на бронирование
         try {
             //Сначала добавляем юзера
-            const userAddResponse = await AddUser(userData);
+            const userAddResponse = await AddUser(normalizedUserData);
             //Далее с помощью полученого id юзера конструируем данные для бронирования
             const formData = userAddResponse.id;
             const bookingData = {
@@ -45,7 +74,7 @@ const BookingForm = () => {
                         tourName,
                         amount_tickets,
                         pricePerTicket,
-                        userData,  
+                        userData: normalizedUserData,  
                     }
                 });
             } else {
@@ -82,7 +111,7 @@ const BookingForm = () => {
                     <input 
                         type="tel" 
                         name="phone" 
-                        placeholder="Ваш телефон" 
+                        placeholder="Ваш телефон (8 или +7)" 
                         value={userData.phone} 
                         onChange={handleChange} 
                         required 
