@@ -11,6 +11,11 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+<<<<<<< HEAD
+=======
+        
+        // Получаем сохранённые данные из localStorage
+>>>>>>> 61768458601e7777f12c8899ef31c8870a449130
         const savedUser = localStorage.getItem('user'+name);
         
         if (savedUser) {
