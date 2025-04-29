@@ -7,9 +7,10 @@ import Footer from '../components/Footer';
 import Landing from '../components/Landing';
 import Planning from '../components/Planning';
 import WhyWe from '../components/WhyWe';
-import Construct from '../components/Construct'; 
+import Construct from '../components/Construct';
+import RecallForm from '../components/RecallForm';
 
-import '../styles/Home.css'; 
+import '../styles/Home.css';
 
 const Home = () => {
     return (
@@ -22,7 +23,7 @@ const Home = () => {
                     <Construct />
                 </div>
             </section>
-            
+
             <section id="planning" className="planning-section">
                 <Planning />
             </section>
@@ -34,7 +35,11 @@ const Home = () => {
             <section id="about-us" className="why-we-section">
                 <WhyWe />
             </section>
+
+      
+            <RecallForm />
             
+
             <section id="gallery" className="gallery-section">
                 <Gallery />
             </section>

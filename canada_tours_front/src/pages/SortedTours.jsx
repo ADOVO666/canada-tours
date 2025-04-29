@@ -3,82 +3,67 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import TourCardMedium from '../components/TourCardMedium'; 
 import '../styles/SortedTours.css';
-import { fetchTours } from '../api'; 
 
 const SortedTours = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    const { filteredTours = [], destination } = location.state || {};
+    const { filteredTours = [], searchType } = location.state || {};
 
-    const [tours, setTours] = useState([]);
-    const [excursions, setExcursions] = useState([]);
+    const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        const loadTours = async () => {
+        const loadItems = async () => {
             try {
                 setLoading(true);
-                //const allTours = await fetchTours(destination);
-                setTours(filteredTours.filter(tour => tour.type === 1));
-                setExcursions(filteredTours.filter(excursion => excursion.type === 2));
+                const filtered = filteredTours.filter(item => 
+                    searchType ? item.type === searchType : true
+                );
+                setItems(filtered);
             } catch (err) {
                 setError("Ошибка загрузки данных");
             } finally {
                 setLoading(false);
             }
         };
-        loadTours();
-    }, [filteredTours]);
+        loadItems();
+    }, [filteredTours, searchType]);
 
     const handleLearnMore = (id) => {
         navigate(`/tour/${id}`);
     };
 
+    const isTourSearch = searchType === 1;
+    const isExcursionSearch = searchType === 2;
+    const itemType = isTourSearch ? 'туры' : 'экскурсии';
+
     return (
         <div>
             <Navbar />
             <div className="sorted-tours-container">
-                <h1>Возможные туры и экскурсии</h1>
+                <h1>Возможные {itemType}</h1>
 
                 {loading && <p>Загрузка...</p>}
                 {error && <p className="error-message">{error}</p>}
 
                 {!loading && !error && (
                     <>
-                        {tours.length > 0 ? (
-                            tours.map((tour) => (
+                        {items.length > 0 ? (
+                            items.map((item) => (
                                 <TourCardMedium 
-                                    key={tour.id}
-                                    id={tour.id}
-                                    title={tour.title}
-                                    description={tour.description}
-                                    image={tour.image} 
+                                    key={item.id}
+                                    id={item.id}
+                                    title={item.title}
+                                    description={item.description}
+                                    image={item.image} 
                                     onLearnMore={handleLearnMore}
-                                    availableTickets={tour.max_tickets-tour.current_tickets}
+                                    availableTickets={item.max_tickets-item.current_tickets}
                                 />
                             ))
                         ) : (
                             <div className="no-tours-message">
-                                <p>Подходящих туров не найдено</p>
-                            </div>
-                        )}
-
-                        {excursions.length > 0 ? (
-                            excursions.map((excursion) => (
-                                <TourCardMedium
-                                    key={excursion.id}
-                                    id={excursion.id}
-                                    title={excursion.title}
-                                    description={excursion.description}
-                                    image={excursion.image} 
-                                    onLearnMore={handleLearnMore}
-                                    availableTickets={excursion.max_tickets-excursion.current_tickets}
-                                />
-                            ))
-                        ) : (
-                            <div className="no-tours-message">
-                                <p>Подходящих экскурсий не найдено</p>
+                                <p>Подходящих {itemType} не найдено</p>
                             </div>
                         )}
                     </>

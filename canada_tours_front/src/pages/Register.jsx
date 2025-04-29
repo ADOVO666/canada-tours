@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from "../components/Navbar";
+import '../styles/AuthForm.css';
 
 const Register = () => {
     const [name, setName] = useState('');
@@ -9,15 +10,9 @@ const Register = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // Создаём объект с данными пользователя
         const userData = { name, password };
-        
-        // Сохраняем в localStorage (ключ: 'user')
         localStorage.setItem('user'+name, JSON.stringify(userData));
-
         navigate('/');
-
         setName('');
         setPassword('');
     }
@@ -25,33 +20,32 @@ const Register = () => {
     return (
         <div>
             <Navbar />
-
-            <form onSubmit={handleSubmit}>
-                <h2>Registration Form</h2>
-                <label>
-                    Name:
-                    <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        required
-                    />
-                </label>
-                <br/>
-                <label>
-                    Password:
-                    <input
-                        type="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                </label>
-                <br/>
-                <button type="submit">Register</button>
-            </form>
+            <div className="auth-container">
+                <form className="auth-form" onSubmit={handleSubmit}>
+                    <h2>Регистрация</h2>
+                    <label>
+                        Имя:
+                        <input
+                            type="text"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                        />
+                    </label>
+                    <label>
+                        Пароль:
+                        <input
+                            type="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </label>
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+            </div>
         </div>
     );
 }
 
-export default Register; 
+export default Register;

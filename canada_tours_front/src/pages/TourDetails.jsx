@@ -65,8 +65,9 @@ const TourDetails = () => {
   const handleBooking = () => {
     navigate("/booking", {
       state: {
-        tourTitle: item.title,
-        tickets: item.max_tickets - item.current_tickets,
+        tourTitle: item.id,
+        tourName: item.title,
+        amount_tickets: item.max_tickets - item.current_tickets,
         pricePerTicket: item.price
       }
     });
