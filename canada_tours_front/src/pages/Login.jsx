@@ -17,6 +17,7 @@ const Login = () => {
             const userData = JSON.parse(savedUser);
             if (userData.name === name && userData.password === password) {
                 sessionStorage.setItem('authenticated', 'true');
+                sessionStorage.setItem('name', name);
                 navigate('/');
             } else {
                 setError('Неверное имя или пароль');
