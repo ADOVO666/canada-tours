@@ -102,25 +102,38 @@ const TourDetails = () => {
         <div className="tour-container">
           <h1>{item.title}</h1>
           
-          <div className="image-container">
+          <div className="tour-gallery">
+            <img
+              src={currentImage}
+              alt={item.title}
+              onLoad={() => setImageLoaded(true)}
+              onError={(e) => {
+                console.error('Error loading image:', e.target.src);
+                e.target.style.display = 'none';
+              }}
+              style={{ display: imageLoaded ? 'block' : 'none' }}
+            />
             {item.images && item.images.length > 1 && (
-              <button className="prev-button" onClick={prevImage}>&lt;</button>
-            )}
-            {currentImage && (
-              <img
-                src={currentImage}
-                alt={item.title}
-                className="tour-details-image"
-                onLoad={() => setImageLoaded(true)}
-                onError={(e) => {
-                  console.error('Error loading image:', e.target.src);
-                  e.target.style.display = 'none';
-                }}
-                style={{ display: imageLoaded ? 'block' : 'none' }}
-              />
-            )}
-            {item.images && item.images.length > 1 && (
-              <button className="next-button" onClick={nextImage}>&gt;</button>
+              <>
+                <button 
+                  className="arrow-button prev" 
+                  onClick={prevImage}
+                  aria-label="Previous image"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                  </svg>
+                </button>
+                <button 
+                  className="arrow-button next" 
+                  onClick={nextImage}
+                  aria-label="Next image"
+                >
+                  <svg viewBox="0 0 24 24">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                  </svg>
+                </button>
+              </>
             )}
           </div>
           

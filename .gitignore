@@ -2,6 +2,8 @@
 db_settings.py
 SECRET_KEY.py
 *.pyc
+/.DS_Store
+venv
 /canada_tours_back/venv
 /canada_tours_back/.idea
 /canada_tours_front/node_modules
@@ -9,3 +11,19 @@ canada_tours_front/src/images/.DS_Store
 /canada_tours_front/.idea
 canada_tours_back/canada_tour/db_settings.py
 /.idea
+# Django stuff:
+*.log
+local_settings.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+__pycache__/
+*.pyc
+myvev/
+.DS_Store

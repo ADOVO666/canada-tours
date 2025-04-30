@@ -338,6 +338,812 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2025-04-21T04:09:42.261Z",
+        "user": 2,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "Тур в Японию",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0440\\u0430\\u043d\\u0430 \\u0433\\u0434\\u0435 \\u043f\\u0440\\u043e\\u0432\\u043e\\u0434\\u0438\\u0442\\u0441\\u044f \\u0442\\u0443\\u0440 \\u0438\\u043b\\u0438 \\u044d\\u043a\\u0441\\u043a\\u0443\\u0440\\u0441\\u0438\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2025-04-29T14:30:30.751Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "7",
+        "object_repr": "Швейцария",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2025-04-29T15:09:02.396Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "10",
+        "object_repr": "Вершины Альп: от Люцерна до Церматта",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (4)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (5)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (6)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2025-04-29T15:14:57.452Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "11",
+        "object_repr": "Glacier Express — панорамный поезд через Альпы",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (7)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (8)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (9)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2025-04-29T15:15:14.161Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "8",
+        "object_repr": "Мальдивы",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2025-04-29T15:17:21.620Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "12",
+        "object_repr": "Райские острова: отдых без обуви и забот",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (10)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (11)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (12)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2025-04-29T15:20:34.838Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "13",
+        "object_repr": "Сноркелинг на рифах Ари-Атолла",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (13)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (14)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (15)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2025-04-29T15:20:47.599Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "9",
+        "object_repr": "Италия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2025-04-29T15:22:53.309Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "14",
+        "object_repr": "Венецианская сказка: тайны воды и времени",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (16)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (17)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (18)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2025-04-29T15:23:44.908Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "14",
+        "object_repr": "Венецианская сказка: тайны воды и времени",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (19)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2025-04-29T15:27:10.006Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "15",
+        "object_repr": "Дворец Дожей — власть и величие",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (20)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (21)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (22)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2025-04-29T15:32:23.450Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "16",
+        "object_repr": "От Банфа до Джаспера — к сердцу дикой природы",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (23)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (24)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (25)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2025-04-29T15:34:09.277Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "17",
+        "object_repr": "Озеро Луиза — жемчужина Скалистых гор",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (26)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (27)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (28)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2025-04-29T15:34:28.593Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "10",
+        "object_repr": "Норвегия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2025-04-29T15:36:29.254Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "18",
+        "object_repr": "Магия фьордов и северного сияния",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (29)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (30)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (31)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2025-04-29T15:38:09.477Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "19",
+        "object_repr": "Круиз по Гейрангер-фьорду",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (32)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (33)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (34)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2025-04-29T15:38:58.494Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "11",
+        "object_repr": "Китай",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2025-04-29T15:43:44.032Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "20",
+        "object_repr": "Древний Китай: от Великой стены до Запретного города",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (35)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (36)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (37)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2025-04-29T15:46:04.873Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "21",
+        "object_repr": "Прогулка по Великой Китайской стене",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (38)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (39)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (40)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2025-04-29T15:47:00.776Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "12",
+        "object_repr": "Австралия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2025-04-29T15:48:37.183Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "22",
+        "object_repr": "Австралийская мозаика: от мегаполиса до рифа",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (41)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (42)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (43)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2025-04-29T15:50:38.737Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "23",
+        "object_repr": "Погружение к Большому Барьерному рифу",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (44)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (45)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (46)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2025-04-29T15:53:15.214Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "24",
+        "object_repr": "Екатеринбург - История на границе Европы и Азии",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (47)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (48)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (49)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2025-04-29T15:54:31.589Z",
+        "user": 3,
+        "content_type": 15,
+        "object_id": "5",
+        "object_repr": "Екатеринбург",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2025-04-29T15:55:14.916Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "25",
+        "object_repr": "•\tСанкт-Петербург - Белые ночи и тайны императорского города",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (50)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (51)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (52)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2025-04-29T15:55:24.035Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "25",
+        "object_repr": "Санкт-Петербург - Белые ночи и тайны императорского города",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435 \\u0442\\u0443\\u0440\\u0430 \\u0438\\u043b\\u0438 \\u044d\\u043a\\u0441\\u043a\\u0443\\u0440\\u0441\\u0438\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2025-04-29T15:55:35.744Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "24",
+        "object_repr": "Екатеринбург - История на границе Европы и Азии",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u043e\\u0440\\u043e\\u0434 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043b\\u0435\\u043d\\u0438\\u044f\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2025-04-29T15:56:56.500Z",
+        "user": 3,
+        "content_type": 15,
+        "object_id": "6",
+        "object_repr": "Казань",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2025-04-29T15:58:02.446Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "26",
+        "object_repr": "Казань - Там, где Восток встречает Запад",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (53)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (54)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (55)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2025-04-29T15:59:02.017Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "27",
+        "object_repr": "Чайные сады и мегаполисы Японии",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2025-04-29T16:00:44.778Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "28",
+        "object_repr": "Чайные сады и мегаполисы Японии",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (56)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (57)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (58)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2025-04-29T16:01:31.603Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "27",
+        "object_repr": "Чайные сады и мегаполисы Японии",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2025-04-29T16:04:37.626Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "29",
+        "object_repr": "Прогулка по Бамбуковому лесу Арасияма",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (59)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (60)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (61)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2025-04-29T16:06:42.579Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "30",
+        "object_repr": "Гастротур по улице Дотонбори в Осаке",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (62)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (63)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (64)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2025-04-29T16:07:41.001Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "13",
+        "object_repr": "Египет",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2025-04-29T16:08:28.248Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "31",
+        "object_repr": "Загадки фараонов",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (65)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (66)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (67)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2025-04-29T16:10:23.378Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "32",
+        "object_repr": "Пирамиды Гизы и Сфинкс",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (68)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (69)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (70)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2025-04-29T16:11:28.860Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "32",
+        "object_repr": "Пирамиды Гизы и Сфинкс",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (71)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2025-04-29T16:13:57.897Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "33",
+        "object_repr": "Долина Царей в Луксоре",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (72)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (73)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (74)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (75)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2025-04-29T16:15:41.126Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "14",
+        "object_repr": "Испания",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2025-04-29T16:16:42.324Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "34",
+        "object_repr": "Архитектурная симфония Барселоны",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (76)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (77)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (78)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2025-04-29T16:19:00.077Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "35",
+        "object_repr": "Шедевры Гауди: Саграда Фамилия и Парк Гуэль",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (79)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (80)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (81)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2025-04-29T16:20:39.272Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "36",
+        "object_repr": "Готический квартал: лабиринт истории",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (82)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (83)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (84)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2025-04-29T16:21:26.747Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "15",
+        "object_repr": "Танзания",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2025-04-29T16:22:24.738Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "37",
+        "object_repr": "Великая миграция",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (85)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (86)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (87)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2025-04-29T16:24:13.156Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "38",
+        "object_repr": "Утренняя сафари-экспедиция",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (88)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (89)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (90)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (91)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2025-04-29T16:25:12.928Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "38",
+        "object_repr": "Утренняя сафари-экспедиция",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2025-04-29T16:26:14.808Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "39",
+        "object_repr": "Сафари на закате в кратере Нгоронгоро",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (92)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (93)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (94)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2025-04-29T16:26:58.231Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "16",
+        "object_repr": "Мексика",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2025-04-29T16:28:14.089Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "40",
+        "object_repr": "От майя до Карибов",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (95)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (96)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (97)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2025-04-29T16:29:46.442Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "41",
+        "object_repr": "Тулум и плавание в сеноте",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (98)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (99)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (100)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2025-04-29T16:31:32.089Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "42",
+        "object_repr": "Пирамиды Чичен-Ицы",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (101)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (102)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (103)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2025-04-29T16:32:12.031Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "17",
+        "object_repr": "Греция",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2025-04-29T16:33:08.259Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "43",
+        "object_repr": "Эхо древности и морских закатов",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (104)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (105)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (106)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2025-04-29T16:35:01.926Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "44",
+        "object_repr": "Акрополь и музей Акрополя",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (107)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (108)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (109)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2025-04-29T16:38:29.498Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "45",
+        "object_repr": "Закат в деревне Ия на Санторини",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (110)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (111)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (112)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2025-04-29T16:39:46.016Z",
+        "user": 3,
+        "content_type": 16,
+        "object_id": "18",
+        "object_repr": "Новая Зеландия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2025-04-29T16:42:17.691Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "46",
+        "object_repr": "Волшебство Средиземья",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (113)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (114)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (115)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2025-04-29T16:44:01.826Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "47",
+        "object_repr": "Круиз по фьорду Милфорд-Саунд",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (116)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (117)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (118)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2025-04-29T16:45:42.363Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "48",
+        "object_repr": "Прогулка к леднику Франц-Джозеф",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (119)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (120)\"}}, {\"added\": {\"name\": \"tour images\", \"object\": \"TourImages object (121)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2025-04-29T16:46:24.030Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "5",
+        "object_repr": "Экскурсия 1",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2025-04-29T16:46:29.628Z",
+        "user": 3,
+        "content_type": 18,
+        "object_id": "9",
+        "object_repr": "Экскурсия 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
@@ -360,7 +1166,7 @@
     "pk": 2,
     "fields": {
         "password": "pbkdf2_sha256$1000000$gvk6NtaHRyKWWcP0Lkk2Os$Pc2tW1n8yA9jkjwic5UWa2xZ7+GTUwRAJt1IugFYLQs=",
-        "last_login": "2025-04-03T20:41:52.378Z",
+        "last_login": "2025-04-22T13:11:53.872Z",
         "is_superuser": true,
         "username": "admin",
         "first_name": "",
@@ -371,6 +1177,32 @@
         "date_joined": "2025-04-03T20:40:30.740Z",
         "groups": [],
         "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$mgaCxnsdEFiPnJjngAO10j$tTnmtD3zx8oaF1DjySUQtK8rRxl3v/uVADJBlgh8deo=",
+        "last_login": "2025-04-29T13:59:23.449Z",
+        "is_superuser": true,
+        "username": "root",
+        "first_name": "",
+        "last_name": "",
+        "email": "root@at.ru",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-04-29T13:59:10.398Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8mphvxdsaetp80729plnbslxfhovb8zf",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgAx1cuvcMZIBBqoYmpV0Z765NutDtf-_9lwi0rTVsnZcwZXEWRpx-t0jpwW0H-U7tNss0t3WZotwVedAur3Pm5-Vw_w4q9fqtXabEBVHFAb0ftbFGsQcGw9pTjMhlSF5pTBFLBqWdTTBCIWssgsvi_QHmLDe1:1u7DPl:k5Mxy9sIkMu9FAnlrTA9Z7Rmgu1QTHV42OAxDfFw6o0",
+        "expire_date": "2025-05-06T13:11:53.878Z"
     }
 },
 {
@@ -391,9 +1223,1936 @@
 },
 {
     "model": "sessions.session",
+    "pk": "msltfu7o5wju8xu6078lcfrg085bxrq8",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHAlJdL934DGYaJVA0kpV0Z_12bdKHbe865L5FwW2vaBi9pLuIstDj9bhnpwW0H5Y7t1iX1ti5zlrsiDzrktRd-Xg7376DiqN9aWYgMVrPxjAqN9aSRcAJrKUdPTvEUMmmmCME6DuCd08qBy14bA-L9Ac85Ntk:1txLgP:OS69fhnQXnmdct71_i8q6QJuWiRs39f3_cBjn-0s08k",
+        "expire_date": "2025-04-09T08:00:17.220Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "q9ucakrz7qspfdz0wg8qhd8fc8flbg0r",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCgAx1cuvcMZIBBqoYmpV0Z765NutDtf-_9lwi0rTVsnZcwZXEWRpx-t0jpwW0H-U7tNss0t3WZotwVedAur3Pm5-Vw_w4q9fqtXabEBVHFAb0ftbFGsQcGw9pTjMhlSF5pTBFLBqWdTTBCIWssgsvi_QHmLDe1:1u6hKj:gWlpinpNevb1BoFIGk4AAqDVUSGsN6nOJE6LurGMcMo",
+        "expire_date": "2025-05-05T02:56:33.363Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ttflo1260tp09p0hos1rjqj8tfmn4twz",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSFAeQSX7v0GMswMUjWQlHZl_Hdt0oVu7znnvkSCba1pG7ykmcRZaHH63TLgg9sO6A7t1iX2ti5zlrsiDzrktRM_L4f7d1Bh1G8diiIbIYQcKCJjpKwA_BTRuOKmrLzzhYC1NVCAg52U9tZiAWcsaSXeHwFqOFQ:1u1Sg0:W4eryJNMxrHnQYR3jlfGkCM_DOIww5en03a6MvfH_xE",
+        "expire_date": "2025-04-20T16:16:52.934Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "uq6fu2i5xe0k2yimnritmaivo0850clb",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hChDBSX7nsGMsOAVA0kpV0Z765NutDtf-_9lwi4rSVsPS1hZnERgzj9boTxkeoO-I711mRsdV1mkrsiD9rl1Dg9r4f7d1Cwl29twMfMmlRy4KzKUYEzFiyB1oOiEc82snJaGzLoLSQcDVqHmf3ARCTeH85tN9A:1u9lUZ:mjGfB3gUs2eorYnhTOpSMLSUf5nNOMKBj8iD4lKlun8",
+        "expire_date": "2025-05-13T13:59:23.451Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zn98rjzsm1wq44yjjf2yr6rk7q5b3wjs",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSHAlJdL934DGYaJVA0kpV0Z_12bdKHbe865L5FwW2vaBi9pLuIstDj9bhnpwW0H5Y7t1iX1ti5zlrsiDzrktRd-Xg7376DiqN9aWYgMVrPxjAqN9aSRcAJrKUdPTvEUMmmmCME6DuCd08qBy14bA-L9Ac85Ntk:1ty3Yd:wZ3y8jEHFA96qxEC_344XVG1yDYFfNbdaFXtifsG8a0",
+        "expire_date": "2025-04-11T06:51:11.616Z"
+    }
+},
+{
+    "model": "sessions.session",
     "pk": "zykduil6s7o0dquni5ewxs2vnmt2ae7e",
     "fields": {
         "session_data": ".eJxVjDsOwjAQBe_iGlleOfE6lPScwdqPjQMokeKkQtwdIqWA9s3Me5lE21rT1vKSRjVnA-b0uzHJI0870DtNt9nKPK3LyHZX7EGbvc6an5fD_Tuo1Oq3RoEi6pUGLVkR2IUSCQJ2wNI7hxBcjModcoBOCD1T1H4QLA6C9-b9Af25N_k:1u0RO0:y6MDAAVI4OkeTmkQCOfBlxXykogMUSMj7UvNstNV5Dg",
         "expire_date": "2025-04-17T20:42:04.033Z"
     }
-}]
+},
+{
+    "model": "tours.user",
+    "pk": 1,
+    "fields": {
+        "name": "Ekaterina",
+        "serial": 6678,
+        "number": 765346,
+        "phone": "+79937764932",
+        "email": "ekaterinazhigadlo08@gmail.com"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 1,
+    "fields": {
+        "name": "Россия"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 2,
+    "fields": {
+        "name": "Беларуссия"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 3,
+    "fields": {
+        "name": "Казахстан"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 4,
+    "fields": {
+        "name": "Канада"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 5,
+    "fields": {
+        "name": "Япония"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 6,
+    "fields": {
+        "name": "Тайланд"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 7,
+    "fields": {
+        "name": "Швейцария"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 8,
+    "fields": {
+        "name": "Мальдивы"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 9,
+    "fields": {
+        "name": "Италия"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 10,
+    "fields": {
+        "name": "Норвегия"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 11,
+    "fields": {
+        "name": "Китай"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 12,
+    "fields": {
+        "name": "Австралия"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 13,
+    "fields": {
+        "name": "Египет"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 14,
+    "fields": {
+        "name": "Испания"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 15,
+    "fields": {
+        "name": "Танзания"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 16,
+    "fields": {
+        "name": "Мексика"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 17,
+    "fields": {
+        "name": "Греция"
+    }
+},
+{
+    "model": "tours.country",
+    "pk": 18,
+    "fields": {
+        "name": "Новая Зеландия"
+    }
+},
+{
+    "model": "tours.citydeparture",
+    "pk": 1,
+    "fields": {
+        "name": "Москва"
+    }
+},
+{
+    "model": "tours.citydeparture",
+    "pk": 2,
+    "fields": {
+        "name": "Новосибирск"
+    }
+},
+{
+    "model": "tours.citydeparture",
+    "pk": 3,
+    "fields": {
+        "name": "Норильск"
+    }
+},
+{
+    "model": "tours.citydeparture",
+    "pk": 4,
+    "fields": {
+        "name": "Санкт-Петербург"
+    }
+},
+{
+    "model": "tours.citydeparture",
+    "pk": 5,
+    "fields": {
+        "name": "Екатеринбург"
+    }
+},
+{
+    "model": "tours.citydeparture",
+    "pk": 6,
+    "fields": {
+        "name": "Казань"
+    }
+},
+{
+    "model": "tours.category",
+    "pk": 1,
+    "fields": {
+        "name": "Тур",
+        "description": "Поездка в какой-либо с включенными: проживанием, питанием, экскурсиями"
+    }
+},
+{
+    "model": "tours.category",
+    "pk": 2,
+    "fields": {
+        "name": "Экскурсия",
+        "description": "Поход куда-либо в какой-либо стране"
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 4,
+    "fields": {
+        "title": "Тур в Альберто",
+        "description": "Горы и природа",
+        "url": "alberto",
+        "image": "tours/T1.png",
+        "destination": 4,
+        "location": 1,
+        "type": 1,
+        "price": 10000.0,
+        "duration": 3,
+        "max_tickets": 20,
+        "current_tickets": 9
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 6,
+    "fields": {
+        "title": "Тур в Британскую Колумбию",
+        "description": "Лес и океан",
+        "url": "british_columbia",
+        "image": "tours/T2.png",
+        "destination": 4,
+        "location": 1,
+        "type": 1,
+        "price": 26000.0,
+        "duration": 7,
+        "max_tickets": 15,
+        "current_tickets": 13
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 7,
+    "fields": {
+        "title": "Тур в Японию",
+        "description": "Исследуйте Токио и Киото",
+        "url": "japan",
+        "image": "tours/T3.png",
+        "destination": 5,
+        "location": 2,
+        "type": 1,
+        "price": 30000.0,
+        "duration": 14,
+        "max_tickets": 15,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 8,
+    "fields": {
+        "title": "Отдых в Таиланде",
+        "description": "Пляжи и море",
+        "url": "thailand",
+        "image": "tours/T4.png",
+        "destination": 6,
+        "location": 3,
+        "type": 1,
+        "price": 30000.0,
+        "duration": 14,
+        "max_tickets": 10,
+        "current_tickets": 7
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 10,
+    "fields": {
+        "title": "Вершины Альп: от Люцерна до Церматта",
+        "description": "Погрузитесь в незабываемое путешествие по сердцу Швейцарских Альп. Вас ждут очаровательные города, пасторальные деревушки, кристальные озёра и альпийские луга, где звон коровьих колокольчиков смешивается с ароматом горных трав. Каждое утро — как открытка, каждое место — как сцена из сказки.",
+        "url": "versh_alp",
+        "image": "tours/alp_BTQhlfn.jpg",
+        "destination": 7,
+        "location": 1,
+        "type": 1,
+        "price": 45000.0,
+        "duration": 7,
+        "max_tickets": 15,
+        "current_tickets": 0
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 11,
+    "fields": {
+        "title": "Glacier Express — панорамный поезд через Альпы",
+        "description": "Медленно скользящий поезда Glacier Express — это не просто транспорт, а настоящее приключение. Вы проедете через 91 тоннель и пересечёте 291 мост, наблюдая, как за окнами проплывают отвесные скалы, снежные вершины и крохотные шале, словно сошедшие с открытки.",
+        "url": "alp_exscurs",
+        "image": "tours/image6_MUMHaFq.jpeg",
+        "destination": 7,
+        "location": 1,
+        "type": 2,
+        "price": 10000.0,
+        "duration": 1,
+        "max_tickets": 10,
+        "current_tickets": 0
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 12,
+    "fields": {
+        "title": "Райские острова: отдых без обуви и забот",
+        "description": "Отключите телефон, выбросьте туфли и растворитесь в покое Мальдив. Это место — для тех, кто ищет уединение, шелест прибоя, закаты, от которых замирает сердце, и ночи, наполненные звуками природы. Жизнь здесь течёт медленно, как танец на песке.",
+        "url": "maldiv_tour",
+        "image": "tours/image10_ecC2LBp.jpeg",
+        "destination": 8,
+        "location": 1,
+        "type": 1,
+        "price": 55000.0,
+        "duration": 8,
+        "max_tickets": 30,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 13,
+    "fields": {
+        "title": "Сноркелинг на рифах Ари-Атолла",
+        "description": "Вы ныряете в подводный калейдоскоп: кораллы всех форм и оттенков, косяки цветных рыб, черепахи и, если повезёт — даже рифовые акулы. Инструктор бережно сопровождает, а GoPro фиксирует вашу подводную сказку.",
+        "url": "maldiv_excurs",
+        "image": "tours/image14_ey125uB.jpeg",
+        "destination": 8,
+        "location": 1,
+        "type": 2,
+        "price": 15000.0,
+        "duration": 1,
+        "max_tickets": 10,
+        "current_tickets": 6
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 14,
+    "fields": {
+        "title": "Венецианская сказка: тайны воды и времени",
+        "description": "В Венеции время останавливается. Вы гуляете по мостикам, слышите, как вечерний колокол отзывается в туманном воздухе, пьёте апероль с видом на закат и теряетесь в лабиринтах улиц, где за каждым углом прячется история любви или предательства.",
+        "url": "italia_venez_tour",
+        "image": "tours/image18_nwtID3o.jpeg",
+        "destination": 9,
+        "location": 3,
+        "type": 1,
+        "price": 50000.0,
+        "duration": 5,
+        "max_tickets": 20,
+        "current_tickets": 12
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 15,
+    "fields": {
+        "title": "Дворец Дожей — власть и величие",
+        "description": "Этот готический шедевр не только великолепен снаружи, но и скрывает множество залов, секретных проходов и камер инквизиции. Гид расскажет, как рождалась и падала Венецианская республика, и вы почувствуете дыхание времени на каждом шагу.",
+        "url": "italia_dojey_excurs",
+        "image": "tours/image23_CImhRwZ.jpeg",
+        "destination": 9,
+        "location": 3,
+        "type": 2,
+        "price": 13000.0,
+        "duration": 1,
+        "max_tickets": 19,
+        "current_tickets": 4
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 16,
+    "fields": {
+        "title": "От Банфа до Джаспера — к сердцу дикой природы",
+        "description": "Представьте себе кедровые леса, изумрудные озёра, горы, где в утренней дымке пробегают олени, и свежий воздух, который пьёшь как воду. Путешествие по Национальным паркам Канады — это возвращение к себе, к простоте и красоте природы.",
+        "url": "kanad_bandfa",
+        "image": "tours/image27_I00nupC.jpeg",
+        "destination": 4,
+        "location": 4,
+        "type": 1,
+        "price": 32500.0,
+        "duration": 10,
+        "max_tickets": 34,
+        "current_tickets": 25
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 17,
+    "fields": {
+        "title": "Озеро Луиза — жемчужина Скалистых гор",
+        "description": "Вы сядете в лодку и неспешно отправитесь по зеркальной глади озера, окружённого заснеженными вершинами. Иногда можно услышать, как трескается лёд на дальнем леднике — голос вечности, обращённый к человеку.",
+        "url": "kanad_bandfa_excurs",
+        "image": "tours/image31_aDBs7nG.jpeg",
+        "destination": 4,
+        "location": 4,
+        "type": 2,
+        "price": 21000.0,
+        "duration": 1,
+        "max_tickets": 13,
+        "current_tickets": 3
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 18,
+    "fields": {
+        "title": "Магия фьордов и северного сияния",
+        "description": "Фьорды — это не просто пейзажи, это порталы в другое измерение. Горы, обрывающиеся в океан, крохотные домики на склонах, вечнозелёные сосны, водопады, будто струны арфы… А по вечерам — охота за северным сиянием, которое танцует на небе, как духи предков.",
+        "url": "norf_magic_tour",
+        "image": "tours/image35_FwSMYmA.jpeg",
+        "destination": 10,
+        "location": 2,
+        "type": 1,
+        "price": 19000.0,
+        "duration": 7,
+        "max_tickets": 16,
+        "current_tickets": 2
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 19,
+    "fields": {
+        "title": "Круиз по Гейрангер-фьорду",
+        "description": "Один из самых красивых фьордов в мире, внесённый в список ЮНЕСКО. Вы отправитесь в плавание между скал, а капитан покажет водопады «Семь сестёр» и «Жених». Возможно, вы увидите дельфинов или тюленей, выплывающих навстречу судну.",
+        "url": "norf_cruiz_excurs",
+        "image": "tours/image39_FB24ksl.jpeg",
+        "destination": 10,
+        "location": 2,
+        "type": 2,
+        "price": 9000.0,
+        "duration": 1,
+        "max_tickets": 14,
+        "current_tickets": 0
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 20,
+    "fields": {
+        "title": "Древний Китай: от Великой стены до Запретного города",
+        "description": "Китай удивляет масштабами и духом. Вы побываете в сердце империй, где каждое здание — философия, каждый храм — отражение Вселенной. Гудящий Пекин сменяется горами и тишиной, чайными плантациями и шелестом бумаги на мастер-классах каллиграфии",
+        "url": "chine_tour",
+        "image": "tours/image43_ZQlWJ3G.jpeg",
+        "destination": 11,
+        "location": 1,
+        "type": 1,
+        "price": 65990.0,
+        "duration": 9,
+        "max_tickets": 23,
+        "current_tickets": 19
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 21,
+    "fields": {
+        "title": "Прогулка по Великой Китайской стене",
+        "description": "Вы поднимаетесь по каменным ступеням и вдруг осознаёте масштаб: великая змея из камня уходит за горизонт. Ветер шумит в волосах, а где-то внизу лежит страна, которую стена защищала веками.",
+        "url": "chine_excurs",
+        "image": "tours/image47_m5onv0U.png",
+        "destination": 11,
+        "location": 1,
+        "type": 2,
+        "price": 11000.0,
+        "duration": 1,
+        "max_tickets": 34,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 22,
+    "fields": {
+        "title": "Австралийская мозаика: от мегаполиса до рифа",
+        "description": "Сидней, Мельбурн, Голд-Кост… А потом — джунгли, кенгуру, горы Синего хребта и конечно, океан. Это тур для тех, кто хочет увидеть, как одна страна может вместить весь мир: от небоскрёбов до аборигенских легенд.",
+        "url": "avstra_tour",
+        "image": "tours/image51_semuJnB.jpeg",
+        "destination": 12,
+        "location": 3,
+        "type": 1,
+        "price": 24000.0,
+        "duration": 12,
+        "max_tickets": 24,
+        "current_tickets": 0
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 23,
+    "fields": {
+        "title": "Погружение к Большому Барьерному рифу",
+        "description": "Вы отправитесь на лодке в открытое море, наденете оборудование и нырнёте в другой мир. Кораллы, как цветной мозайкой, покрывают дно. Рыбы — как с мультфильма, а вода — настолько прозрачна, что кажется, вы летите.\r\nПродолжительность: 5 часов",
+        "url": "avstra_barier_excurs",
+        "image": "tours/image55_cZZiSOD.jpeg",
+        "destination": 12,
+        "location": 3,
+        "type": 2,
+        "price": 5000.0,
+        "duration": 1,
+        "max_tickets": 16,
+        "current_tickets": 13
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 24,
+    "fields": {
+        "title": "Екатеринбург - История на границе Европы и Азии",
+        "description": "Город, в котором встречаются металл, легенды, архитектура конструктивизма и трагические главы истории. Вы побываете в Храме-на-Крови, погуляете по набережной Исети, заглянете в музей с артефактами Романовых и постоите одной ногой в Европе, другой — в Азии.",
+        "url": "ekb_excurs",
+        "image": "tours/image60_NtOlBi6.jpeg",
+        "destination": 1,
+        "location": 5,
+        "type": 2,
+        "price": 4500.0,
+        "duration": 6,
+        "max_tickets": 10,
+        "current_tickets": 0
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 25,
+    "fields": {
+        "title": "Санкт-Петербург - Белые ночи и тайны императорского города",
+        "description": "Вы увидите Северную Венецию с воды, проплывая под разводными мостами, услышите живой голос экскурсовода в Эрмитаже, прогуляетесь по Летнему саду и узнаете, где на самом деле спрятан Янтарный кабинет.\r\nПродолжительность: 6 часов",
+        "url": "spb_white_excurs",
+        "image": "tours/image64_4TAyQc1.jpeg",
+        "destination": 1,
+        "location": 4,
+        "type": 2,
+        "price": 7300.0,
+        "duration": 1,
+        "max_tickets": 15,
+        "current_tickets": 5
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 26,
+    "fields": {
+        "title": "Казань - Там, где Восток встречает Запад",
+        "description": "Город с тысячелетней историей, где мечети соседствуют с соборами, а кухня объединяет пельмени и эчпочмак. Вы посетите Казанский Кремль, увидите знаменитую башню Сююмбике, прокатитесь по Волге и услышите легенды древних татар.\r\nПродолжительность: 5 часов",
+        "url": "kazan_vost_excurs",
+        "image": "tours/image68_RmFywaR.jpeg",
+        "destination": 1,
+        "location": 6,
+        "type": 2,
+        "price": 3550.0,
+        "duration": 1,
+        "max_tickets": 21,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 28,
+    "fields": {
+        "title": "Чайные сады и мегаполисы Японии",
+        "description": "Очарование старинного Киото с его красочными храмами, живописными аллеями бамбука и неспешными чайными церемониями сочетается с яркой, пульсирующей жизнью Осаки, города неоновых огней и уличной кухни. Тур для тех, кто хочет ощутить две стороны Японии!",
+        "url": "japan__tea_tour",
+        "image": "tours/image72_aO66HJL.jpeg",
+        "destination": 5,
+        "location": 2,
+        "type": 1,
+        "price": 45000.0,
+        "duration": 8,
+        "max_tickets": 21,
+        "current_tickets": 7
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 29,
+    "fields": {
+        "title": "Прогулка по Бамбуковому лесу Арасияма",
+        "description": "Волшебный Бамбуковый лес в Киото словно переносит вас в другой мир: высокие изумрудные стебли шелестят над головой, а мягкий свет пробивается сквозь зелёную толщу. Вы пройдёте по тенистым тропинкам, увидите древние пагоды и сможете посетить храм Тэнрю-дзи — один из красивейших садов Японии, где царит гармония природы и архитектуры.\r\nПродолжительность: 3 часа",
+        "url": "japan_bamb_tour",
+        "image": "tours/image76_L5exAJm.jpeg",
+        "destination": 5,
+        "location": 2,
+        "type": 2,
+        "price": 14000.0,
+        "duration": 1,
+        "max_tickets": 17,
+        "current_tickets": 0
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 30,
+    "fields": {
+        "title": "Гастротур по улице Дотонбори в Осаке",
+        "description": "Осака — это рай для гурманов! На ярко освещённой улице Дотонбори вы попробуете знаменитые тако-яки (шарики с осьминогом), окономияки (японские блинчики) и полюбуетесь на светящиеся вывески, включая знаменитого «бегущего человека». Атмосфера веселья, ароматов и уличной музыки останется в памяти навсегда!\r\nПродолжительность: 2,5 часа",
+        "url": "japan_osaka_excurs",
+        "image": "tours/image80_BX8A2gl.jpeg",
+        "destination": 5,
+        "location": 2,
+        "type": 2,
+        "price": 5000.0,
+        "duration": 1,
+        "max_tickets": 14,
+        "current_tickets": 0
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 31,
+    "fields": {
+        "title": "Загадки фараонов",
+        "description": "Путешествие сквозь тысячелетия: грандиозные пирамиды, загадочный Сфинкс и древние тайны фараонов. Ощутите дух великой цивилизации, прокатившись по берегам Нила и прогуливаясь по величественным храмам, словно в лабиринте древних миров.",
+        "url": "egipet_tour",
+        "image": "tours/image84_GbrBU3h.jpeg",
+        "destination": 13,
+        "location": 6,
+        "type": 1,
+        "price": 43690.0,
+        "duration": 7,
+        "max_tickets": 25,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 32,
+    "fields": {
+        "title": "Пирамиды Гизы и Сфинкс",
+        "description": "Вы окажетесь перед величием трёх гигантов — пирамид Хеопса, Хефрена и Микерина. Узнайте секреты их строительства и тайны древнеегипетской цивилизации, почувствуйте дыхание тысячелетий. Завершит экскурсию встреча с Великой Сфинксом — загадочным стражем пустыни.\r\nПродолжительность 4 часа",
+        "url": "egipet_sfinks_excurs",
+        "image": "tours/image88_4zN5OOB.jpeg",
+        "destination": 13,
+        "location": 6,
+        "type": 2,
+        "price": 10000.0,
+        "duration": 1,
+        "max_tickets": 20,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 33,
+    "fields": {
+        "title": "Долина Царей в Луксоре",
+        "description": "Вас ждёт захватывающее путешествие в сердце египетской истории: великолепные гробницы фараонов, покрытые древними росписями, расскажут о потусторонних мирах, верованиях и обрядах древнего Египта. Прикоснитесь к легендам в долине, где покоился сам Тутанхамон.\r\nПродолжительность: 5 часов",
+        "url": "egipet_cari_excurs",
+        "image": "tours/image93_AP2kYlX.png",
+        "destination": 13,
+        "location": 6,
+        "type": 2,
+        "price": 12000.0,
+        "duration": 1,
+        "max_tickets": 13,
+        "current_tickets": 5
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 34,
+    "fields": {
+        "title": "Архитектурная симфония Барселоны",
+        "description": "Барселона — город мечты и свободы, где здания превращаются в сказочные скульптуры, а узкие улицы Готического квартала шепчут истории прошлого. В этом туре вы окунетесь в магию Гауди, солнечное тепло пляжей и беззаботную радость жизни!",
+        "url": "ispania_barselona_tour",
+        "image": "tours/image98_gKfoN6p.jpeg",
+        "destination": 14,
+        "location": 4,
+        "type": 1,
+        "price": 69990.0,
+        "duration": 6,
+        "max_tickets": 30,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 35,
+    "fields": {
+        "title": "Шедевры Гауди: Саграда Фамилия и Парк Гуэль",
+        "description": "Вы восхититесь готической величественностью Саграда Фамилия — храма, который словно растет из земли. Затем прогулка приведет вас в Парк Гуэль: фантастические мозаики, причудливые формы и виды на всю Барселону создадут ощущение сказки.\r\nПродолжительность: 4 часа",
+        "url": "ispania_gaydi_excurs",
+        "image": "tours/image102_n4yx5ST.jpeg",
+        "destination": 14,
+        "location": 6,
+        "type": 2,
+        "price": 17590.0,
+        "duration": 1,
+        "max_tickets": 12,
+        "current_tickets": 5
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 36,
+    "fields": {
+        "title": "Готический квартал: лабиринт истории",
+        "description": "Вас ждут узкие средневековые улицы, крошечные площади, величественные соборы и тайные уголки. Погрузитесь в атмосферу старой Барселоны, почувствуйте её ритм и узнайте о легендах города, спрятанных в камне и витиеватых улочках.\r\nПродолжительность: 3 часа",
+        "url": "ispania_gotic_excurs",
+        "image": "tours/image106_O3TfX4S.jpeg",
+        "destination": 14,
+        "location": 6,
+        "type": 2,
+        "price": 3700.0,
+        "duration": 1,
+        "max_tickets": 30,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 37,
+    "fields": {
+        "title": "Великая миграция",
+        "description": "Настоящее приключение в сердце Африки! Великая миграция антилоп гну, охота хищников и необъятные просторы саванны под огненными закатами — это сафари, которое останется в сердце навсегда.",
+        "url": "tanzania_tour",
+        "image": "tours/image110_p5thS2X.jpeg",
+        "destination": 15,
+        "location": 5,
+        "type": 1,
+        "price": 35990.0,
+        "duration": 9,
+        "max_tickets": 19,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 38,
+    "fields": {
+        "title": "Утренняя сафари-экспедиция",
+        "description": "На рассвете саванна наполняется жизнью: львы выходят на охоту, стада зебр и антилоп пересекают пыльные равнины. Вы отправитесь в открытом джипе в сердце Серенгети, чтобы стать свидетелем невероятных сцен дикой природы в её естественной среде.\r\nПродолжительность: 6 часов",
+        "url": "tanzania_savann_excurs",
+        "image": "tours/image115_gjlLxA8.jpeg",
+        "destination": 15,
+        "location": 5,
+        "type": 2,
+        "price": 7990.0,
+        "duration": 1,
+        "max_tickets": 13,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 39,
+    "fields": {
+        "title": "Сафари на закате в кратере Нгоронгоро",
+        "description": "Закат над кратером превращает пейзаж в полотно теплых красок. Вы увидите редчайших животных: носорогов, слонов, гепардов в этом уникальном природном заповеднике, возникшем на месте древнего вулкана.\r\nПродолжительность: 5 часов",
+        "url": "tanzania_safari_excurs",
+        "image": "tours/image119_uZOkKfZ.jpeg",
+        "destination": 15,
+        "location": 5,
+        "type": 2,
+        "price": 14990.0,
+        "duration": 1,
+        "max_tickets": 21,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 40,
+    "fields": {
+        "title": "От майя до Карибов",
+        "description": "Погружение в мир ярких красок, древних загадок и бесконечных пляжей. Мексика завораживает: бирюзовые воды Карибского моря, древние руины на утесах и освежающие купания в таинственных сенотах.",
+        "url": "mexica_tour",
+        "image": "tours/image122_FFftNXx.jpeg",
+        "destination": 16,
+        "location": 1,
+        "type": 1,
+        "price": 54990.0,
+        "duration": 7,
+        "max_tickets": 17,
+        "current_tickets": 8
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 41,
+    "fields": {
+        "title": "Тулум и плавание в сеноте",
+        "description": "На скале над бирюзовыми водами Карибского моря вас встретит древний город майя — Тулум. После прогулки среди старинных стен и храмов вас ждет купание в загадочных сенотах — подземных озерах с кристально чистой водой в окружении сталактитов.\r\nПродолжительность: 5 часов",
+        "url": "mexica_tylym_excurs",
+        "image": "tours/image126_AzkKDHq.jpeg",
+        "destination": 16,
+        "location": 1,
+        "type": 2,
+        "price": 15990.0,
+        "duration": 1,
+        "max_tickets": 16,
+        "current_tickets": 6
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 42,
+    "fields": {
+        "title": "Пирамиды Чичен-Ицы",
+        "description": "Перед вами откроется одна из величайших загадок мира — пирамида Кукулькана. Вы узнаете о жертвоприношениях, астрономии майя и тайных механизмах, скрытых в архитектуре древнего города.\r\nПродолжительность: 4 часа",
+        "url": "mexica_piramyd_excurs",
+        "image": "tours/image130_VRW0C2j.jpeg",
+        "destination": 16,
+        "location": 1,
+        "type": 2,
+        "price": 21090.0,
+        "duration": 1,
+        "max_tickets": 15,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 43,
+    "fields": {
+        "title": "Эхо древности и морских закатов",
+        "description": "Путешествие сквозь века и мечты: от мраморных колонн Акрополя до белоснежных домиков Санторини, усыпавших скалистые склоны над сверкающим морем. Древние легенды и романтика Эгейского моря в одном туре!",
+        "url": "greeze_tour",
+        "image": "tours/image134_yFAFG87.jpeg",
+        "destination": 17,
+        "location": 2,
+        "type": 1,
+        "price": 78990.0,
+        "duration": 8,
+        "max_tickets": 23,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 44,
+    "fields": {
+        "title": "Акрополь и музей Акрополя",
+        "description": "Пройдитесь по тропинкам, где зарождалась философия и искусство. Вы подниметесь на холм Акрополя, увидите Парфенон и затем посетите один из лучших музеев мира, где под стеклянными полами сияют древние улицы.\r\nПродолжительность: 3,5 часа",
+        "url": "greeze_acropol_excurs",
+        "image": "tours/image138_10AaH4g.jpeg",
+        "destination": 17,
+        "location": 2,
+        "type": 2,
+        "price": 15990.0,
+        "duration": 1,
+        "max_tickets": 25,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 45,
+    "fields": {
+        "title": "Закат в деревне Ия на Санторини",
+        "description": "Белоснежные домики, ярко-синие купола церквей, бескрайнее Эгейское море... Вы отправитесь в Ию — идеальное место для наблюдения заката, когда небо окрашивается в оранжево-розовые оттенки, а город словно загорается золотым светом.\r\nПродолжительность: 2,5 часа",
+        "url": "greeze_iya_excurs",
+        "image": "tours/image142_Z4fWB1S.jpeg",
+        "destination": 17,
+        "location": 2,
+        "type": 2,
+        "price": 21990.0,
+        "duration": 1,
+        "max_tickets": 18,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 46,
+    "fields": {
+        "title": "Волшебство Средиземья",
+        "description": "Добро пожаловать в мир, где реальность выглядит как декорация к фильму! Южный остров Новой Зеландии — это захватывающие дух горы, величественные фьорды и ледники, где природа словно сошла с полотна художника.\r\nПродолжительность: 10 дней",
+        "url": "nov_zeland_tour",
+        "image": "tours/image146_IiUnorD.jpeg",
+        "destination": 18,
+        "location": 2,
+        "type": 1,
+        "price": 56990.0,
+        "duration": 10,
+        "max_tickets": 21,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 47,
+    "fields": {
+        "title": "Круиз по фьорду Милфорд-Саунд",
+        "description": "На борту корабля вы будете скользить по водам одного из красивейших фьордов планеты: отвесные скалы, ревущие водопады и заснеженные пики создадут незабываемое ощущение первозданной природы.\r\nПродолжительность: 5 часов",
+        "url": "nov_zeland_saynd_excurs",
+        "image": "tours/image150_CqZnZ95.jpeg",
+        "destination": 18,
+        "location": 2,
+        "type": 2,
+        "price": 12000.0,
+        "duration": 1,
+        "max_tickets": 16,
+        "current_tickets": 10
+    }
+},
+{
+    "model": "tours.tour",
+    "pk": 48,
+    "fields": {
+        "title": "Прогулка к леднику Франц-Джозеф",
+        "description": "Пешая прогулка приведет вас к мощному леднику, обрамленному густыми тропическими лесами. Удивительное место, где мир льда встречает мир зелени!\r\nПродолжительность: 4 часа",
+        "url": "nov_zeland_led_excurs",
+        "image": "tours/image154_d96mX8b.jpeg",
+        "destination": 18,
+        "location": 2,
+        "type": 2,
+        "price": 17990.0,
+        "duration": 1,
+        "max_tickets": 13,
+        "current_tickets": 0
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 1,
+    "fields": {
+        "tour": 4,
+        "images": "tours/T1_WNAUpKa.png"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 2,
+    "fields": {
+        "tour": 4,
+        "images": "tours/T6_L2dDPfv.png"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 3,
+    "fields": {
+        "tour": 4,
+        "images": "tours/T8_SLTbZ8d.png"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 4,
+    "fields": {
+        "tour": 10,
+        "images": "tours/image3_AXTWa4J.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 5,
+    "fields": {
+        "tour": 10,
+        "images": "tours/image4_2BSHfXo.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 6,
+    "fields": {
+        "tour": 10,
+        "images": "tours/image5_ReISl0A.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 7,
+    "fields": {
+        "tour": 11,
+        "images": "tours/image7_TXATZWM.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 8,
+    "fields": {
+        "tour": 11,
+        "images": "tours/image8_hxO1kGf.png"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 9,
+    "fields": {
+        "tour": 11,
+        "images": "tours/image9_YtEFLDv.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 10,
+    "fields": {
+        "tour": 12,
+        "images": "tours/image11_4nYsb8q.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 11,
+    "fields": {
+        "tour": 12,
+        "images": "tours/image12_6l6IHvo.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 12,
+    "fields": {
+        "tour": 12,
+        "images": "tours/image13_a43JbIW.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 13,
+    "fields": {
+        "tour": 13,
+        "images": "tours/image15_Tf7NqKC.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 14,
+    "fields": {
+        "tour": 13,
+        "images": "tours/image16_VflhQVO.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 15,
+    "fields": {
+        "tour": 13,
+        "images": "tours/image17_8aspcqE.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 16,
+    "fields": {
+        "tour": 14,
+        "images": "tours/image19_qlEa9GO.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 17,
+    "fields": {
+        "tour": 14,
+        "images": "tours/image20_vsyEQSf.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 18,
+    "fields": {
+        "tour": 14,
+        "images": "tours/image21_LR404gf.png"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 19,
+    "fields": {
+        "tour": 14,
+        "images": "tours/image22_cGeNBmC.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 20,
+    "fields": {
+        "tour": 15,
+        "images": "tours/image24_D7QDguh.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 21,
+    "fields": {
+        "tour": 15,
+        "images": "tours/image25_Oj0Z19v.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 22,
+    "fields": {
+        "tour": 15,
+        "images": "tours/image26_EdBC8KJ.png"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 23,
+    "fields": {
+        "tour": 16,
+        "images": "tours/image28_dYmOjfg.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 24,
+    "fields": {
+        "tour": 16,
+        "images": "tours/image29_zJc1Q3w.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 25,
+    "fields": {
+        "tour": 16,
+        "images": "tours/image30_lx3yP3i.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 26,
+    "fields": {
+        "tour": 17,
+        "images": "tours/image32_2y7UgYp.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 27,
+    "fields": {
+        "tour": 17,
+        "images": "tours/image33_qaOIxPY.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 28,
+    "fields": {
+        "tour": 17,
+        "images": "tours/image34_PvrYRbJ.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 29,
+    "fields": {
+        "tour": 18,
+        "images": "tours/image36_i2uZY5p.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 30,
+    "fields": {
+        "tour": 18,
+        "images": "tours/image37_pdpPEJD.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 31,
+    "fields": {
+        "tour": 18,
+        "images": "tours/image38_HRTavXT.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 32,
+    "fields": {
+        "tour": 19,
+        "images": "tours/image40_AkSeS04.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 33,
+    "fields": {
+        "tour": 19,
+        "images": "tours/image41_9jZaBUW.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 34,
+    "fields": {
+        "tour": 19,
+        "images": "tours/image42_oDnKBn7.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 35,
+    "fields": {
+        "tour": 20,
+        "images": "tours/image44_xh4lhpn.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 36,
+    "fields": {
+        "tour": 20,
+        "images": "tours/image45_dicl4B4.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 37,
+    "fields": {
+        "tour": 20,
+        "images": "tours/image46_xCS1B6u.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 38,
+    "fields": {
+        "tour": 21,
+        "images": "tours/image48_A1dnmhs.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 39,
+    "fields": {
+        "tour": 21,
+        "images": "tours/image49_rm6ORqu.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 40,
+    "fields": {
+        "tour": 21,
+        "images": "tours/image50_z2sKFBd.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 41,
+    "fields": {
+        "tour": 22,
+        "images": "tours/image52_nJm7BSM.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 42,
+    "fields": {
+        "tour": 22,
+        "images": "tours/image53_X3GHVzk.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 43,
+    "fields": {
+        "tour": 22,
+        "images": "tours/image54_DUV0z9O.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 44,
+    "fields": {
+        "tour": 23,
+        "images": "tours/image56_Gfrf47p.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 45,
+    "fields": {
+        "tour": 23,
+        "images": "tours/image57_lk47jb9.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 46,
+    "fields": {
+        "tour": 23,
+        "images": "tours/image58_1C3WzHO.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 47,
+    "fields": {
+        "tour": 24,
+        "images": "tours/image61_g7l1tI4.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 48,
+    "fields": {
+        "tour": 24,
+        "images": "tours/image62_zFf9TlA.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 49,
+    "fields": {
+        "tour": 24,
+        "images": "tours/image63_rWTK2d4.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 50,
+    "fields": {
+        "tour": 25,
+        "images": "tours/image65_sxTxf15.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 51,
+    "fields": {
+        "tour": 25,
+        "images": "tours/image66_4VpB7fa.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 52,
+    "fields": {
+        "tour": 25,
+        "images": "tours/image67_Qbie2DJ.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 53,
+    "fields": {
+        "tour": 26,
+        "images": "tours/image69_YGMj0te.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 54,
+    "fields": {
+        "tour": 26,
+        "images": "tours/image70_yqmBhqX.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 55,
+    "fields": {
+        "tour": 26,
+        "images": "tours/image71_9qSNzWF.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 56,
+    "fields": {
+        "tour": 28,
+        "images": "tours/image73_gVIdKrQ.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 57,
+    "fields": {
+        "tour": 28,
+        "images": "tours/image74_pNp97rw.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 58,
+    "fields": {
+        "tour": 28,
+        "images": "tours/image75_qBscq8c.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 59,
+    "fields": {
+        "tour": 29,
+        "images": "tours/image77_ElShZSO.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 60,
+    "fields": {
+        "tour": 29,
+        "images": "tours/image78_gUvE8gl.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 61,
+    "fields": {
+        "tour": 29,
+        "images": "tours/image79_VETj3Vw.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 62,
+    "fields": {
+        "tour": 30,
+        "images": "tours/image81_VbMk24C.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 63,
+    "fields": {
+        "tour": 30,
+        "images": "tours/image82_A8MYcUP.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 64,
+    "fields": {
+        "tour": 30,
+        "images": "tours/image83_6ZO2h28.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 65,
+    "fields": {
+        "tour": 31,
+        "images": "tours/image85_yj1k9YX.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 66,
+    "fields": {
+        "tour": 31,
+        "images": "tours/image86_uv7zp0i.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 67,
+    "fields": {
+        "tour": 31,
+        "images": "tours/image87_85CakVS.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 68,
+    "fields": {
+        "tour": 32,
+        "images": "tours/image89_b7YBgoB.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 69,
+    "fields": {
+        "tour": 32,
+        "images": "tours/image90_fiXls0M.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 70,
+    "fields": {
+        "tour": 32,
+        "images": "tours/image91_1pd6Kye.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 71,
+    "fields": {
+        "tour": 32,
+        "images": "tours/image92_lh5QtZ7.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 72,
+    "fields": {
+        "tour": 33,
+        "images": "tours/image94_96RRJ6t.png"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 73,
+    "fields": {
+        "tour": 33,
+        "images": "tours/image95_embPuEF.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 74,
+    "fields": {
+        "tour": 33,
+        "images": "tours/image96_1nCmBEj.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 75,
+    "fields": {
+        "tour": 33,
+        "images": "tours/image97_oFCLWfg.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 76,
+    "fields": {
+        "tour": 34,
+        "images": "tours/image99_8kBzFqD.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 77,
+    "fields": {
+        "tour": 34,
+        "images": "tours/image100_ALVKO1v.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 78,
+    "fields": {
+        "tour": 34,
+        "images": "tours/image101_PLXa2cw.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 79,
+    "fields": {
+        "tour": 35,
+        "images": "tours/image103_yC2SKsX.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 80,
+    "fields": {
+        "tour": 35,
+        "images": "tours/image104_XC7A3aS.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 81,
+    "fields": {
+        "tour": 35,
+        "images": "tours/image106_9vPxvs0.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 82,
+    "fields": {
+        "tour": 36,
+        "images": "tours/image107_Tv7DsiM.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 83,
+    "fields": {
+        "tour": 36,
+        "images": "tours/image108_3n5prDj.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 84,
+    "fields": {
+        "tour": 36,
+        "images": "tours/image108_QfgMafV.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 85,
+    "fields": {
+        "tour": 37,
+        "images": "tours/image111_lVNPxSo.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 86,
+    "fields": {
+        "tour": 37,
+        "images": "tours/image112_CKqpr0V.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 87,
+    "fields": {
+        "tour": 37,
+        "images": "tours/image113_0OOKwU4.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 88,
+    "fields": {
+        "tour": 38,
+        "images": "tours/image115_8NTfeqZ.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 89,
+    "fields": {
+        "tour": 38,
+        "images": "tours/image114_A5neUBL.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 90,
+    "fields": {
+        "tour": 38,
+        "images": "tours/image116_qhGgMtm.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 91,
+    "fields": {
+        "tour": 38,
+        "images": "tours/image117_8S1hDC3.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 92,
+    "fields": {
+        "tour": 39,
+        "images": "tours/image120_Up1uOIH.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 93,
+    "fields": {
+        "tour": 39,
+        "images": "tours/image121_z05a84A.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 94,
+    "fields": {
+        "tour": 39,
+        "images": "tours/image122_oOFT2uO.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 95,
+    "fields": {
+        "tour": 40,
+        "images": "tours/image123_NcDMlrz.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 96,
+    "fields": {
+        "tour": 40,
+        "images": "tours/image124_Ee2OvE1.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 97,
+    "fields": {
+        "tour": 40,
+        "images": "tours/image125_pdtHCT6.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 98,
+    "fields": {
+        "tour": 41,
+        "images": "tours/image127_jjWGAk3.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 99,
+    "fields": {
+        "tour": 41,
+        "images": "tours/image128_G81ndwQ.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 100,
+    "fields": {
+        "tour": 41,
+        "images": "tours/image129_GfcIytt.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 101,
+    "fields": {
+        "tour": 42,
+        "images": "tours/image131_fDZ3AG3.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 102,
+    "fields": {
+        "tour": 42,
+        "images": "tours/image132_sJigoIa.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 103,
+    "fields": {
+        "tour": 42,
+        "images": "tours/image133_rXH9ZDc.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 104,
+    "fields": {
+        "tour": 43,
+        "images": "tours/image135_QR7cOAW.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 105,
+    "fields": {
+        "tour": 43,
+        "images": "tours/image136_7G4mWxt.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 106,
+    "fields": {
+        "tour": 43,
+        "images": "tours/image137_xBn0KGU.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 107,
+    "fields": {
+        "tour": 44,
+        "images": "tours/image139_eQR21Xe.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 108,
+    "fields": {
+        "tour": 44,
+        "images": "tours/image140_lEojFdE.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 109,
+    "fields": {
+        "tour": 44,
+        "images": "tours/image141_9KJxwc1.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 110,
+    "fields": {
+        "tour": 45,
+        "images": "tours/image143_T8OTeEA.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 111,
+    "fields": {
+        "tour": 45,
+        "images": "tours/image144_zwUNkKO.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 112,
+    "fields": {
+        "tour": 45,
+        "images": "tours/image145_h1R4f37.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 113,
+    "fields": {
+        "tour": 46,
+        "images": "tours/image147_e84D21f.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 114,
+    "fields": {
+        "tour": 46,
+        "images": "tours/image148_c03Ahwx.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 115,
+    "fields": {
+        "tour": 46,
+        "images": "tours/image149_l0SsWeQ.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 116,
+    "fields": {
+        "tour": 47,
+        "images": "tours/image151_8J84Zqr.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 117,
+    "fields": {
+        "tour": 47,
+        "images": "tours/image152_O7lttLv.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 118,
+    "fields": {
+        "tour": 47,
+        "images": "tours/image153_lnpWZVJ.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 119,
+    "fields": {
+        "tour": 48,
+        "images": "tours/image155_bEiDpnU.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 120,
+    "fields": {
+        "tour": 48,
+        "images": "tours/image156_qJcHCkj.jpeg"
+    }
+},
+{
+    "model": "tours.tourimages",
+    "pk": 121,
+    "fields": {
+        "tour": 48,
+        "images": "tours/image157_joisQWb.jpeg"
+    }
+},
+{
+    "model": "tours.booking",
+    "pk": 1,
+    "fields": {
+        "tourTitle": 4,
+        "formData": 1,
+        "amount_tickets": 11
+    }
+}
+]
