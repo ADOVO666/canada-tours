@@ -1,6 +1,7 @@
 /* BookingForm.css */
 .booking-form-container {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     height: 60vh;
@@ -120,7 +121,7 @@
   /* ----------- Контрольная точка до 1200px ----------- */
 @media (max-width: 1200px) {
   .booking-form-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     height: auto;
     padding: 30px;

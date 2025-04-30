@@ -105,7 +105,7 @@ const Payment = () => {
             <Navbar />
             <div className="payment-container">
                 <div className="form-container">
-                    <h2>Оплата тура: {tourName}</h2>
+                    <h2>Оплата: {tourName}</h2>
                     <p>Количество билетов: {amount_tickets}</p>
                     <p>Цена за один билет: {pricePerTicket} руб.</p>
                     <p>Общая сумма: {totalAmount} руб.</p>
