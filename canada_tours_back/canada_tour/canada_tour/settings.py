@@ -61,12 +61,59 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'tours.middleware.LogVisitMiddleware', 
 ]
 
 ROOT_URLCONF = 'canada_tour.urls'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    # Форматировщики
+    'formatters': {
+        # Для посещения сайта
+        'visit': {
+            'format': '{message}',
+            'style': '{',
+        },
+        # Для ошибок
+        'errors': {
+            'format': '{levelname} {asctime} {message}',
+            'style': '{',
+        },
+    },
+    # Обработчики
+    'handlers': {
+        'visit_file': { # для посещений
+            'level': 'INFO', # Info и выше
+            'class': 'logging.FileHandler',
+            'filename': 'visit.log',
+            'formatter': 'visit',
+        },
+        'error_file': { # для ошибок
+            'level': 'WARNING',
+            'class': 'logging.FileHandler',
+            'filename': 'er.log',
+            'formatter': 'errors',
+        },
+    },
+    'loggers': {
+        # Логи посещений
+        'tours': {
+            'handlers': ['visit_file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+        # Все ошибки обрабатывает
+        'django.request': {
+            'handlers': ['error_file'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+    },
+}
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
