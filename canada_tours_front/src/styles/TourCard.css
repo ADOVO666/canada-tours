@@ -1,5 +1,5 @@
 /* TourCard.css */
-.tour-card {
+.popular-tour-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,11 +16,11 @@
 }
 
 
-.tour-card:hover {
+.popular-tour-card:hover {
     transform: scale(1.01);
 }
 
-.tour-card img {
+.popular-tour-card img {
     width: 100%;
     height: 100%; 
     max-height: 220px; 
@@ -28,12 +28,12 @@
     border-radius: 10px;
 }
 
-.tour-card h3 {
+.popular-tour-card h3 {
     font-size: 1.2rem;
     margin: 10px 0;
 }
 
-.tour-card p {
+.popular-tour-card p {
     font-size: 1rem;
     color: #555;
     margin: 10px 0;
@@ -65,15 +65,15 @@
 
 
 @media (max-width: 1200px) {
-    .tour-card {
+    .popular-tour-card {
         width: 100%;
         padding: 10px;
     }
-    .tour-card h3{
+    .popular-tour-card h3{
         font-size: 20px;
     }
 
-    .tour-card img {
+    .popular-tour-card img {
         max-height: 180px;
     }
 }
@@ -81,31 +81,31 @@
 
 /* Для маленьких экранов */
 @media (max-width: 768px) {
-    .tour-card {
+    .popular-tour-card {
         width: 100%;
         padding: 10px;
     }
-    .tour-card h3{
+    .popular-tour-card h3{
         font-size: 20px;
     }
 
-    .tour-card img {
+    .popular-tour-card img {
         max-height: 180px;
     }
 }
 
 /* Для очень маленьких экранов */
 @media (max-width: 480px) {
-    .tour-card {
+    .popular-tour-card {
         width: 100%;
         padding: 8px;
     }
 
-    .tour-card h3{
+    .popular-tour-card h3{
         font-size: 20px;
     }
 
-    .tour-card img {
+    .popular-tour-card img {
         max-height: 150px;
     }
 }

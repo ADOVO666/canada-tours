@@ -115,7 +115,7 @@ class Booking(models.Model):
                                          default=1, null=False, blank=False)
 
     def __str__(self):
-        return self.name
+        return f"{self.formData.name} — {self.tourTitle.title}"
 
     class Meta:
         verbose_name = 'Бронирование тура или экскурсии'

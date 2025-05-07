@@ -54,14 +54,14 @@ const TourDetails = () => {
   const maxTickets = item.max_tickets - item.current_tickets;
 
   const nextImage = () => {
-    if (item.images && currentImageIndex < item.images.length - 1) {
+    if (item.images && item.images.length > 0 && currentImageIndex < item.images.length - 1) {
       setCurrentImageIndex(currentImageIndex + 1);
       setImageLoaded(false);
     }
   };
 
   const prevImage = () => {
-    if (item.images && currentImageIndex > 0) {
+    if (item.images && item.images.length > 0 && currentImageIndex > 0) {
       setCurrentImageIndex(currentImageIndex - 1);
       setImageLoaded(false);
     }
@@ -93,7 +93,7 @@ const TourDetails = () => {
     });
   };
 
-  const currentImage = item.images ? item.images[currentImageIndex] : item.image;
+  const currentImage = item.images && item.images.length > 0 ? item.images[currentImageIndex] : item.image;
 
   return (
     <div>
