@@ -71,49 +71,60 @@ MEDIA_ROOT = BASE_DIR / 'media'
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    # Форматировщики
     'formatters': {
-        # Для посещения сайта
         'visit': {
             'format': '{message}',
             'style': '{',
         },
-        # Для ошибок
         'errors': {
             'format': '{levelname} {asctime} {message}',
             'style': '{',
         },
+        'success': {
+            'format': '[{asctime}] {levelname} - {message}',
+            'style': '{',
+        },
     },
-    # Обработчики
     'handlers': {
-        'visit_file': { # для посещений
-            'level': 'INFO', # Info и выше
+        'visit_file': {
+            'level': 'INFO',
             'class': 'logging.FileHandler',
             'filename': 'visit.log',
             'formatter': 'visit',
         },
-        'error_file': { # для ошибок
+        'error_file': {
             'level': 'WARNING',
             'class': 'logging.FileHandler',
             'filename': 'er.log',
             'formatter': 'errors',
         },
+
+        'success_file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'success.log',
+            'formatter': 'success',
+        },
     },
     'loggers': {
-        # Логи посещений
         'tours': {
             'handlers': ['visit_file'],
             'level': 'INFO',
             'propagate': False,
         },
-        # Все ошибки обрабатывает
         'django.request': {
             'handlers': ['error_file'],
             'level': 'WARNING',
             'propagate': False,
         },
+        'success_logger': {
+            'handlers': ['success_file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
     },
 }
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

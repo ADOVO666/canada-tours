@@ -6,12 +6,20 @@ from .serializers import UserSerializer, TourSerializer, BookingSerializer, Tour
     CityDepartureSerializer, CountrySerializer
 
 from django.db.models import F, ExpressionWrapper, IntegerField
+import logging
+
+success_logger = logging.getLogger('success_logger')
+error_logger = logging.getLogger('django.request')
 
 
 # Create your views here.
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+    def perform_create(self, serializer):
+        instance = serializer.save()
+        success_logger.info(f'Действие со стороны пользователя {instance.email} (ID: {instance.id})')
 
 
 class TourViewSet(viewsets.ModelViewSet):
@@ -68,6 +76,20 @@ class BookingViewSet(viewsets.ModelViewSet):
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
 
+    def perform_create(self, serializer):
+        try:
+            booking = serializer.save()
+
+            user_id = booking.formData.id
+            tour_id = booking.tourTitle.id 
+            quantity = booking.amount_tickets
+
+            success_logger.info(
+                f'Бронирование: пользователь ID {user_id}, тур ID {tour_id}, количество забронированных мест: {quantity}'
+            )
+        except Exception as e:
+            error_logger.error(f'Ошибка при бронировании: {str(e)}')
+            raise
 
 class CityDepartureViewSet(viewsets.ModelViewSet):
     queryset = CityDeparture.objects.all()
