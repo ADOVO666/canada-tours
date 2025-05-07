@@ -1,5 +1,5 @@
 \.idea\
-db_settings.py
+*/db_settings*
 SECRET_KEY.py
 *.pyc
 /.DS_Store
